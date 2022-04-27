@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MrFix - Buy</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/logo.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/logo.svg" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/logo.svg" />
+
+    <!-- Css link start -->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" type="text/css" media="screen" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+</head>
+
+<body>
+
+    <!-- Header Start -->
+    <header class="header bg-black">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center flex-grow-1">
+                    <div>
+                        <a href="index.html"><img src="assets/images/logo.svg" alt="Logo" /></a>
+                    </div>
+                    <div class="secBox flex-grow-1 me-5">
+                        <input type="text"
+                            placeholder="Search Apple iPhone, Samsung Galaxy, Screens, Battery, Cable, Headphones, Car Mount, Cases..."
+                            class="form-control">
+                    </div>
+                </div>
+
+                <div class="rtBlock d-flex align-items-center">
+                    <h2 class="font-size-15 txt-white d-flex align-items-center">
+                        <span class="me-1"><img src="assets/images/location_icon.svg"></span>
+                        Home street, Edinburgh
+                    </h2>
+                    <button class="font-size-15 txt-white d-flex align-items-center bg-transparent mx-5">
+                        <span class="me-1"><img src="assets/images/account_icon.svg"></span>
+                        My Account
+                    </button>
+                    <h2 class="font-size-15 txt-white d-flex align-items-center me-2">
+                        <span class="me-1"><img src="assets/images/cart_icon.svg"></span>
+                        1 Item / £144.99
+                    </h2>
+                    <a href="cart.html" class="bg-primary font-size-14 txt-white checkBtn">
+                        Checkout
+                    </a>
+                </div>
+            </div>
+            <nav class="navigation">
+                <ul id="navigat" class="d-flex align-items-center justify-content-between">
+                    <li><a href="#" class="">Repairs</a></li>
+                    <li><a href="accesories.html" class="">Accesories</a></li>
+                    <li><a href="buy.html" class="">Buy</a></li>
+                    <li><a href="sell.html" class="">Sell</a></li>
+                    <li><a href="#" class="">Spare Parts</a></li>
+                    <li><a href="#" class="">Unlock</a></li>
+                    <li><a href="#" class="">Deals</a></li>
+                    <li><a href="#" class="">Repair Status</a></li>
+                    <li><a href="#" class="">Track my Order</a></li>
+                    <li><a href="#" class="">My Wishlist</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="bg-primary">
+        <div class="container d-flex align-items-center justify-content-between font-size-15 text-white py-2">
+            <h3>Spring Sale | March 15th - March 31st. Shop Now</h3>
+            <h3>Spring Sale | March 15th - March 31st. Shop Now</h3>
+            <h3>Spring Sale | March 15th - March 31st. Shop Now</h3>
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Cart Item Start -->
+    <section class="cart_Block">
+        <div class="container">
+            <h2 class="font-size-36 fw-semi-bold mb-3">My Cart</h2>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="table-responsiv">
+                        <table class="table">
+                            <thead class="font-size-16">
+                                <tr>
+                                    <td>Your Order Details</td>
+                                    <td>Quantity</td>
+                                    <td>Price</td>
+                                </tr>
+                            </thead>
+                            <tbody class="pt-2">
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="cartSelectImg me-4">
+                                                <img src="assets/images/yourSelectProduct_img.png" alt="">
+                                            </div>
+                                            <div>
+                                                <h2 class="font-size-18 fw-semi-bold">Apple iPhone 12 Mini, 128GB</h2>
+                                                <h3 class="font-size-14 my-1">Grade: A
+                                                    <span class="d-block my-1">Color: Green</span>
+                                                    <span class="d-block">Network: Unlocked</span>
+                                                </h3>
+                                                <h4 class="font-size-14 fw-semi-bold txt-gren">In stock</h4>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="input-group plus-minus-input">
+                                            <div class="input-group-button">
+                                                <button type="button" class="button hollow circle" data-quantity="minus"
+                                                    data-field="quantity">
+                                                    <img src="assets/images/minus.svg" alt="">
+                                                </button>
+                                            </div>
+                                            <input class="input-group-field" type="number" name="quantity" value="0">
+                                            <div class="input-group-button">
+                                                <button type="button" class="button hollow circle" data-quantity="plus"
+                                                    data-field="quantity">
+                                                    <img src="assets/images/plus_icon.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="font-size-18 fw-semi-bold">
+                                        £349.99
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="cartSelectImg me-4">
+                                                <img src="assets/images/yourSelectProduct_img.png" alt="">
+                                            </div>
+                                            <div>
+                                                <h2 class="font-size-18 fw-semi-bold">Apple iPhone 12 Mini, 128GB</h2>
+                                                <h3 class="font-size-14 my-1">Grade: A
+                                                    <span class="d-block my-1">Color: Green</span>
+                                                    <span class="d-block">Network: Unlocked</span>
+                                                </h3>
+                                                <h4 class="font-size-14 fw-semi-bold text-danger">Not in stock</h4>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="opacity-25">
+                                        <div class="input-group plus-minus-input">
+                                            <div class="input-group-button">
+                                                <button type="button" class="button hollow circle" data-quantity="minus"
+                                                    data-field="quantity">
+                                                    <img src="assets/images/minus.svg" alt="">
+                                                </button>
+                                            </div>
+                                            <input class="input-group-field" type="number" name="quantity" value="0">
+                                            <div class="input-group-button">
+                                                <button type="button" class="button hollow circle" data-quantity="plus"
+                                                    data-field="quantity">
+                                                    <img src="assets/images/plus_icon.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="font-size-18 fw-semi-bold opacity-25">
+                                        £349.99
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="cartSelectImg me-4">
+                                                <img src="assets/images/yourSelectProduct_img.png" alt="">
+                                            </div>
+                                            <div>
+                                                <h2 class="font-size-18 fw-semi-bold">Apple iPhone 12 Mini, 128GB</h2>
+                                                <h3 class="font-size-14 my-1">Grade: A
+                                                    <span class="d-block my-1">Color: Green</span>
+                                                    <span class="d-block">Network: Unlocked</span>
+                                                </h3>
+                                                <h4 class="font-size-14 fw-semi-bold txt-gren">In stock</h4>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="input-group plus-minus-input">
+                                            <div class="input-group-button">
+                                                <button type="button" class="button hollow circle" data-quantity="minus"
+                                                    data-field="quantity">
+                                                    <img src="assets/images/minus.svg" alt="">
+                                                </button>
+                                            </div>
+                                            <input class="input-group-field" type="number" name="quantity" value="0">
+                                            <div class="input-group-button">
+                                                <button type="button" class="button hollow circle" data-quantity="plus"
+                                                    data-field="quantity">
+                                                    <img src="assets/images/plus_icon.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="font-size-18 fw-semi-bold">
+                                        £349.99
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="rt_box">
+                        <h2 class="font-size-24 fw-normal mb-2">Total (2 Items)</h2>
+                        <h2 class="font-size-18 mb-2">Delivery: Free</h2>
+                        <h2 class="font-size-18 mb-2">Tax: N/A </h2>
+                        <h3 class="font-size-36 fw-semi-bold mb-3">£365.99</h3>
+                        <div class="form-group mb-2">
+                            <input type="checkbox" id="html">
+                            <label for="html" class="checkBox">Home Delivery</label>
+                        </div>
+                        <div class="form-group mb-3">
+                            <input type="checkbox" id="html2">
+                            <label for="html2" class="checkBox">Click & Collect</label>
+                        </div>
+                        <select class="js-example-disabled-results" class="form-control">
+                            <option value="one">Home Street, Edinburgh</option>
+                            <option value="one">Demo Text 1</option>
+                            <option value="one">Demo Text 2</option>
+                            <option value="one">Demo Text 3</option>
+                            <option value="one">Demo Text 4</option>
+                            <option value="one">Demo Text 5</option>
+                        </select>
+                        <button>Proceed to Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Cart Item End -->
+
+
+    <!-- Related Products Start -->
+    <section class="">
+        <div class="container">
+            <div class="relatedProducts">
+                <h2>You may also like</h2>
+                <div class="owl-carousel owl-theme owl-loaded owl-drag">
+                    <div class="owl-stage-outer">
+                        <div class="owl-stage"
+                            style="transform: translate3d(-1249px, 0px, 0px); transition: all 0s ease 0s; width: 3998px;">
+                            <div class="owl-item cloned" style="width: 239.866px; margin-right: 10px;">
+                                <div class="item">
+                                    <div class="productBox mb-0 d-flex flex-column align-items-center">
+                                        <div class="img_box mb-3">
+                                            <img src="assets/images/mobile_img.png" alt="">
+                                        </div>
+                                        <div class="text-center">
+                                            <h3 class="font-size-18">iPhone 13 Pro</h3>
+                                            <h4>£649.99 - £799.99</h4>
+                                            <a href="buy_product.html" class="det">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item cloned" style="width: 239.866px; margin-right: 10px;">
+                                <div class="item">
+                                    <div class="productBox mb-0 d-flex flex-column align-items-center">
+                                        <div class="img_box mb-3">
+                                            <img src="assets/images/mobile_img.png" alt="">
+                                        </div>
+                                        <div class="text-center">
+                                            <h3 class="font-size-18">iPhone 13 Pro</h3>
+                                            <h4>£649.99 - £799.99</h4>
+                                            <a href="buy_product.html" class="det">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item cloned" style="width: 239.866px; margin-right: 10px;">
+                                <div class="item">
+                                    <div class="productBox mb-0 d-flex flex-column align-items-center">
+                                        <div class="img_box mb-3">
+                                            <img src="assets/images/mobile_img.png" alt="">
+                                        </div>
+                                        <div class="text-center">
+                                            <h3 class="font-size-18">iPhone 13 Pro</h3>
+                                            <h4>£649.99 - £799.99</h4>
+                                            <a href="buy_product.html" class="det">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item cloned" style="width: 239.866px; margin-right: 10px;">
+                                <div class="item">
+                                    <div class="productBox mb-0 d-flex flex-column align-items-center">
+                                        <div class="img_box mb-3">
+                                            <img src="assets/images/mobile_img.png" alt="">
+                                        </div>
+                                        <div class="text-center">
+                                            <h3 class="font-size-18">iPhone 13 Pro</h3>
+                                            <h4>£649.99 - £799.99</h4>
+                                            <a href="buy_product.html" class="det">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item cloned" style="width: 239.866px; margin-right: 10px;">
+                                <div class="item">
+                                    <div class="productBox mb-0 d-flex flex-column align-items-center">
+                                        <div class="img_box mb-3">
+                                            <img src="assets/images/mobile_img.png" alt="">
+                                        </div>
+                                        <div class="text-center">
+                                            <h3 class="font-size-18">iPhone 13 Pro</h3>
+                                            <h4>£649.99 - £799.99</h4>
+                                            <a href="buy_product.html" class="det">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item active" style="width: 239.866px; margin-right: 10px;">
+                                <div class="item">
+                                    <div class="productBox mb-0 d-flex flex-column align-items-center">
+                                        <div class="img_box mb-3">
+                                            <img src="assets/images/mobile_img.png" alt="">
+                                        </div>
+                                        <div class="text-center">
+                                            <h3 class="font-size-18">iPhone 13 Pro</h3>
+                                            <h4>£649.99 - £799.99</h4>
+                                            <a href="buy_product.html" class="det">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item active" style="width: 239.866px; margin-right: 10px;">
+                                <div class="item">
+                                    <div class="productBox mb-0 d-flex flex-column align-items-center">
+                                        <div class="img_box mb-3">
+                                            <img src="assets/images/mobile_img.png" alt="">
+                                        </div>
+                                        <div class="text-center">
+                                            <h3 class="font-size-18">iPhone 13 Pro</h3>
+                                            <h4>£649.99 - £799.99</h4>
+                                            <a href="buy_product.html" class="det">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item active" style="width: 239.866px; margin-right: 10px;">
+                                <div class="item">
+                                    <div class="productBox mb-0 d-flex flex-column align-items-center">
+                                        <div class="img_box mb-3">
+                                            <img src="assets/images/mobile_img.png" alt="">
+                                        </div>
+                                        <div class="text-center">
+                                            <h3 class="font-size-18">iPhone 13 Pro</h3>
+                                            <h4>£649.99 - £799.99</h4>
+                                            <a href="buy_product.html" class="det">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item active" style="width: 239.866px; margin-right: 10px;">
+                                <div class="item">
+                                    <div class="productBox mb-0 d-flex flex-column align-items-center">
+                                        <div class="img_box mb-3">
+                                            <img src="assets/images/mobile_img.png" alt="">
+                                        </div>
+                                        <div class="text-center">
+                                            <h3 class="font-size-18">iPhone 13 Pro</h3>
+                                            <h4>£649.99 - £799.99</h4>
+                                            <a href="buy_product.html" class="det">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item active" style="width: 239.866px; margin-right: 10px;">
+                                <div class="item">
+                                    <div class="productBox mb-0 d-flex flex-column align-items-center">
+                                        <div class="img_box mb-3">
+                                            <img src="assets/images/mobile_img.png" alt="">
+                                        </div>
+                                        <div class="text-center">
+                                            <h3 class="font-size-18">iPhone 13 Pro</h3>
+                                            <h4>£649.99 - £799.99</h4>
+                                            <a href="buy_product.html" class="det">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item" style="width: 239.866px; margin-right: 10px;">
+                                <div class="item">
+                                    <div class="productBox mb-0 d-flex flex-column align-items-center">
+                                        <div class="img_box mb-3">
+                                            <img src="assets/images/mobile_img.png" alt="">
+                                        </div>
+                                        <div class="text-center">
+                                            <h3 class="font-size-18">iPhone 13 Pro</h3>
+                                            <h4>£649.99 - £799.99</h4>
+                                            <a href="buy_product.html" class="det">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item cloned" style="width: 239.866px; margin-right: 10px;">
+                                <div class="item">
+                                    <div class="productBox mb-0 d-flex flex-column align-items-center">
+                                        <div class="img_box mb-3">
+                                            <img src="assets/images/mobile_img.png" alt="">
+                                        </div>
+                                        <div class="text-center">
+                                            <h3 class="font-size-18">iPhone 13 Pro</h3>
+                                            <h4>£649.99 - £799.99</h4>
+                                            <a href="buy_product.html" class="det">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item cloned" style="width: 239.866px; margin-right: 10px;">
+                                <div class="item">
+                                    <div class="productBox mb-0 d-flex flex-column align-items-center">
+                                        <div class="img_box mb-3">
+                                            <img src="assets/images/mobile_img.png" alt="">
+                                        </div>
+                                        <div class="text-center">
+                                            <h3 class="font-size-18">iPhone 13 Pro</h3>
+                                            <h4>£649.99 - £799.99</h4>
+                                            <a href="buy_product.html" class="det">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item cloned" style="width: 239.866px; margin-right: 10px;">
+                                <div class="item">
+                                    <div class="productBox mb-0 d-flex flex-column align-items-center">
+                                        <div class="img_box mb-3">
+                                            <img src="assets/images/mobile_img.png" alt="">
+                                        </div>
+                                        <div class="text-center">
+                                            <h3 class="font-size-18">iPhone 13 Pro</h3>
+                                            <h4>£649.99 - £799.99</h4>
+                                            <a href="buy_product.html" class="det">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item cloned" style="width: 239.866px; margin-right: 10px;">
+                                <div class="item">
+                                    <div class="productBox mb-0 d-flex flex-column align-items-center">
+                                        <div class="img_box mb-3">
+                                            <img src="assets/images/mobile_img.png" alt="">
+                                        </div>
+                                        <div class="text-center">
+                                            <h3 class="font-size-18">iPhone 13 Pro</h3>
+                                            <h4>£649.99 - £799.99</h4>
+                                            <a href="buy_product.html" class="det">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item cloned" style="width: 239.866px; margin-right: 10px;">
+                                <div class="item">
+                                    <div class="productBox mb-0 d-flex flex-column align-items-center">
+                                        <div class="img_box mb-3">
+                                            <img src="assets/images/mobile_img.png" alt="">
+                                        </div>
+                                        <div class="text-center">
+                                            <h3 class="font-size-18">iPhone 13 Pro</h3>
+                                            <h4>£649.99 - £799.99</h4>
+                                            <a href="buy_product.html" class="det">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><span
+                                aria-label="Previous">‹</span></button><button type="button" role="presentation"
+                            class="owl-next"><span aria-label="Next">›</span></button></div>
+                    <div class="owl-dots disabled"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Related Products End -->
+
+    <!-- Footer Start -->
+    <footer class="footer">
+        <div class="container">
+            <div class="fotterLinkSection">
+                <div>
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Customer Satisfaction Policy</a></li>
+                        <li><a href="#">Join Our Team</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Terms & Condition</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Complains</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Services</h2>
+                    <ul>
+                        <li><a href="#">Book Your Repair</a></li>
+                        <li><a href="#">Buy Spare Parts</a></li>
+                        <li><a href="#">Buy Accessories</a></li>
+                        <li><a href="#"> a Phone</a></li>
+                        <li><a href="#">Sell/ Trade a Phone</a></li>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Reset My Password</a></li>
+                        <li><a href="#">Track Your Order</a></li>
+                        <li><a href="#">Warranty</a></li>
+                        <li><a href="#">Returns and Refunds</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Featured</h2>
+                    <ul>
+                        <li><a href="#">Business Customers</a></li>
+                        <li><a href="#">School Customers</a></li>
+                        <li><a href="#">Special Rates</a></li>
+                        <li><a href="#">e-Waste and e-Disposal</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">New Arrivals</a></li>
+                        <li><a href="#">Our Partners</a></li>
+                        <li><a href="#">Bulk Buying</a></li>
+                        <li><a href="#">Feedack and Reviews</a></li>
+                        <li><a href="#">Reseller Program</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Our Stores</h2>
+                    <ul>
+                        <li><a href="#">Edinburgh Home Street</a></li>
+                        <li><a href="#"></a>Edinburgh Corstorphine</a></li>
+                        <li><a href="#"></a>Milton Keynes</a></li>
+                        <li><a href="#"></a>Kilmornock</a></li>
+                        <li><a href="#"></a>Glasgow</a></li>
+                        <li><a href="#"></a>Arbroth</a></li>
+                        <li><a href="#"></a>Bolton</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Other Links</h2>
+                    <ul>
+                        <li><a href="#">iPhone Screen Repair</a></li>
+                        <li><a href="#">iPhone Unlocking</a></li>
+                        <li><a href="#">iPad Repair Unlocking Shop</a></li>
+                        <li><a href="#">Mobile Repair Shop</a></li>
+                        <li><a href="#">Samsung Phone Repair Shop</a></li>
+                        <li><a href="#">Oneplus Phone Repair</a></li>
+                        <li><a href="#">Computer Laptop Screen Repair</a></li>
+                        <li><a href="#">Macbook Repair Shop</a></li>
+                        <li><a href="#">Huawei Repair</a></li>
+                        <li><a href="#">Sony Repair</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bottom_Block d-flex align-items-center justify-content-between pb-3">
+                <ul class="d-flex align-items-center flex-wrap">
+                    <li>
+                        <a href="#"><img src="assets/images/Security_footer.svg" alt=""></a>
+                    </li>
+                    <li class="mx-4 px-lg-2 my-3 my-md-0">
+                        <a href="#"><img src="assets/images/UK_footer.svg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="assets/images/Payments_footer.svg" alt=""></a>
+                    </li>
+                </ul>
+
+                <ul class="rt_media_block d-flex align-items-center flex-wrap">
+                    <li>
+                        <a href="#" class="d-block">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M32 0H4C1.79 0 0 1.79 0 4V32C0 34.21 1.79 36 4 36H32C34.21 36 36 34.21 36 32V4C36 1.79 34.21 0 32 0ZM28.1 13.028C28.1 13.2 28.1 13.37 28.1 13.714C28.1 20.228 23.128 27.772 14.042 27.772C11.3 27.772 8.728 26.914 6.5 25.544C6.842 25.544 7.358 25.544 7.7 25.544C9.928 25.544 12.158 24.686 13.872 23.486C11.644 23.486 9.93 21.944 9.244 20.058C9.586 20.058 9.93 20.23 10.102 20.23C10.616 20.23 10.96 20.23 11.474 20.058C9.246 19.544 7.532 17.658 7.532 15.258C8.218 15.6 8.904 15.772 9.76 15.944C8.388 14.744 7.532 13.372 7.532 11.658C7.532 10.8 7.704 9.944 8.218 9.258C10.618 12.172 14.218 14.23 18.332 14.4C18.332 14.058 18.16 13.714 18.16 13.2C18.16 10.458 20.388 8.228 23.132 8.228C24.504 8.228 25.874 8.742 26.732 9.77C27.932 9.598 28.96 9.084 29.818 8.57C29.476 9.77 28.618 10.628 27.59 11.312C28.618 11.14 29.476 10.97 30.504 10.454C29.814 11.486 28.958 12.342 28.1 13.028Z"
+                                    fill="#949494" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="d-block">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10 0C4.478 0 0 4.478 0 10V26C0 31.522 4.478 36 10 36H26C31.522 36 36 31.522 36 26V10C36 4.478 31.522 0 26 0H10ZM30 4C31.104 4 32 4.896 32 6C32 7.104 31.104 8 30 8C28.896 8 28 7.104 28 6C28 4.896 28.896 4 30 4ZM18 8C23.522 8 28 12.478 28 18C28 23.522 23.522 28 18 28C12.478 28 8 23.522 8 18C8 12.478 12.478 8 18 8ZM18 12C16.4087 12 14.8826 12.6321 13.7574 13.7574C12.6321 14.8826 12 16.4087 12 18C12 19.5913 12.6321 21.1174 13.7574 22.2426C14.8826 23.3679 16.4087 24 18 24C19.5913 24 21.1174 23.3679 22.2426 22.2426C23.3679 21.1174 24 19.5913 24 18C24 16.4087 23.3679 14.8826 22.2426 13.7574C21.1174 12.6321 19.5913 12 18 12Z"
+                                    fill="#949494" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="d-block">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M20 0C8.954 0 0 8.954 0 20C0 30.026 7.386 38.306 17.01 39.752V25.3H12.062V20.042H17.01V16.544C17.01 10.752 19.832 8.21 24.646 8.21C26.952 8.21 28.17 8.38 28.748 8.458V13.046H25.464C23.42 13.046 22.706 14.984 22.706 17.168V20.042H28.696L27.884 25.3H22.708V39.794C32.47 38.472 40 30.124 40 20C40 8.954 31.046 0 20 0Z"
+                                    fill="#949494" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="d-block">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M32 0H4C1.79 0 0 1.79 0 4V32C0 34.21 1.79 36 4 36H32C34.21 36 36 34.21 36 32V4C36 1.79 34.21 0 32 0ZM12 28H6.954V14H12V28ZM9.388 11.434C7.846 11.434 6.816 10.406 6.816 9.034C6.816 7.662 7.844 6.634 9.558 6.634C11.1 6.634 12.13 7.662 12.13 9.034C12.13 10.406 11.102 11.434 9.388 11.434ZM30 28H25.116V20.348C25.116 18.232 23.814 17.744 23.326 17.744C22.838 17.744 21.21 18.07 21.21 20.348C21.21 20.674 21.21 28 21.21 28H16.164V14H21.21V15.954C21.86 14.814 23.162 14 25.604 14C28.046 14 30 15.954 30 20.348V28Z"
+                                    fill="#949494" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Js Start -->
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <!-- <script type="text/javascript" src="assets/js/main.js"></script> -->
+
+
+    <script>
+        jQuery(document).ready(function () {
+            $('[data-quantity="plus"]').click(function (e) {
+                e.preventDefault();
+                fieldName = $(this).attr('data-field');
+                var currentVal = parseInt($('input[name=' + fieldName + ']').val());
+                if (!isNaN(currentVal)) {
+                    $('input[name=' + fieldName + ']').val(currentVal + 1);
+                } else {
+                    $('input[name=' + fieldName + ']').val(0);
+                }
+            });
+            $('[data-quantity="minus"]').click(function (e) {
+                e.preventDefault();
+                fieldName = $(this).attr('data-field');
+                var currentVal = parseInt($('input[name=' + fieldName + ']').val());
+                if (!isNaN(currentVal) && currentVal > 0) {
+                    $('input[name=' + fieldName + ']').val(currentVal - 1);
+                } else {
+                    $('input[name=' + fieldName + ']').val(0);
+                }
+            });
+        });
+
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        });
+
+        $(".js-example-disabled-results").select2({});
+
+        jQuery(function ($) {
+            var path = window.location.href;
+            $('ul a').each(function () {
+                if (this.href === path) {
+                    $(this).addClass('active');
+                }
+            });
+        });
+
+    </script>
+    <!-- Js End -->
+</body>
+
+</html>
