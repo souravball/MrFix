@@ -502,6 +502,16 @@ button:focus {
   position: relative;
   padding: 35px 0;
   min-height: 206px;
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+}
+
+.brand .box:hover h2{
+  font-weight: 600;
+}
+
+.brand .box:nth-child(1):hover path{
+  fill: black;
 }
 
 .brand .box:nth-child(1):before {
@@ -524,6 +534,10 @@ button:focus {
   height: 1px;
 }
 
+.brand .box:nth-child(2):hover path{
+  fill: #034EA2;
+}
+
 .brand .box:nth-child(2):before {
   content: "";
   position: absolute;
@@ -542,6 +556,10 @@ button:focus {
   border-bottom: 1px solid #000;
   width: 100%;
   height: 1px;
+}
+
+.brand .box:nth-child(3):hover path{
+  fill: #CE0E2D;
 }
 
 .brand .box:nth-child(3):before {
@@ -564,6 +582,10 @@ button:focus {
   height: 1px;
 }
 
+.brand .box:nth-child(4):hover path{
+  fill: #F50514;
+}
+
 .brand .box:nth-child(4)::after {
   content: "";
   position: absolute;
@@ -572,6 +594,10 @@ button:focus {
   background: url(../images/brand_border2_right.svg) no-repeat center;
   width: 100%;
   height: 1px;
+}
+
+.brand .box:nth-child(5):hover path{
+  fill: #888B8D;
 }
 
 .brand .box:nth-child(5):before {
@@ -584,6 +610,10 @@ button:focus {
   height: 100%;
 }
 
+.brand .box:nth-child(6):hover path{
+  fill: black;
+}
+
 .brand .box:nth-child(6):before {
   content: "";
   position: absolute;
@@ -594,6 +624,10 @@ button:focus {
   height: 100%;
 }
 
+.brand .box:nth-child(7):hover path{
+  fill: #1C4598;
+}
+
 .brand .box:nth-child(7):before {
   content: "";
   position: absolute;
@@ -602,6 +636,10 @@ button:focus {
   background: url(../images/brand_border_bottom.svg) no-repeat center;
   width: 1px;
   height: 100%;
+}
+
+.brand .box:nth-child(8):hover path{
+  fill: black;
 }
 
 /*=============== Brand End ==================*/
