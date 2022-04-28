@@ -530,9 +530,12 @@
                 <input type="file" accept="image/*" name="image" id="file" class="d-none" onchange="loadFile(event)">
                 <div class="d-flex align-items-center">
                     <div class="uploadImg">
-                        <img id="output" src="assets/images/file-uplode_img.svg" />
+                        <img src="assets/images/file-uplode_img.svg">
                     </div>
-                    <label for="file" class="font-size-14 ms-3 cursor-pointer">No pictures added</label>
+                    <div class="fileContainer position-relative flex-grow-1">
+                        <span class="font-size-14 ms-3 cursor-pointer txt-light">No pictures added, <u class="font-size-12 txt-dark">please select</u> </span>
+                        <input type="file" value="Choose File" class="opacity-">
+                    </div>
                 </div>
             </div>
             <div class="mb-4">
@@ -543,7 +546,7 @@
                             4HT</span>
                     </h2>
 
-                    <span class="cursor-pointer"  onclick="print()">
+                    <span class="cursor-pointer" onclick="print()">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M17.5714 18H20.4C20.7314 18 21 17.7314 21 17.4V11C21 8.79086 19.2091 7 17 7H7C4.79086 7 3 8.79086 3 11V17.4C3 17.7314 3.26863 18 3.6 18H6.42857"
@@ -564,7 +567,9 @@
 
             <div>
                 <label class="d-block font-size-16 txt-light mt-4 mb-2">Terms & Conditions</label>
-                <p class="font-size-14 addBorder">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus aliquam orci eget at velit id. Morbi bibendum in etiam placerat ut a varius accumsan. Auctor tellus enim quam vulputate ullamcorper. Faucibus arcu porttitor in scelerisque enim, diam, ipsum enim.</p>
+                <p class="font-size-14 addBorder">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus aliquam
+                    orci eget at velit id. Morbi bibendum in etiam placerat ut a varius accumsan. Auctor tellus enim
+                    quam vulputate ullamcorper. Faucibus arcu porttitor in scelerisque enim, diam, ipsum enim.</p>
             </div>
 
             <button class="btnRq">Submit Request</button>
@@ -601,16 +606,37 @@
 
         $(".js-example-disabled-results").select2({});
 
-        var loadFile = function (event) {
-            var image = document.getElementById('output');
-            image.src = URL.createObjectURL(event.target.files[0]);
-        };
 
         function print() {
             var frame = document.getElementById('frame');
             frame.contentWindow.focus();
             frame.contentWindow.print();
         }
+
+
+        $("input:file").change(function () {
+            var fileName = $(this).val();
+            if (fileName.length > 0) {
+                $(this).parent().children('span').html(fileName);
+            }
+            else {
+                $(this).parent().children('span').html("Choose file");
+
+            }
+        });
+        //file input preview
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    $('.uploadImg img').attr('src', e.target.result);
+                }
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+        $("input:file").change(function () {
+            readURL(this);
+        });
     </script>
 </body>
 
