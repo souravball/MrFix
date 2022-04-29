@@ -3255,21 +3255,152 @@ input[type=number] {
 
 
 
+/* ==============mind-for-us-start================= */
 
+.mind-for-us{
+  padding-top: 50px;
+}
+.mind-for-us img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.mind-for-us .dec{
+  position: absolute;
+  top: 100px;
+  left: 90px;
+  z-index: 9;
+}
+.mind-for-us .dec h1{
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 96px;
+  color: var(--black);
+  padding-bottom: 16px;
+}
+.mind-for-us .dec p{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color:  var(--black);
 
+}
 
+/* ==============mind-for-us-end================= */
 
+/* ==================book-a-reapair-start==================== */
+.book-a-reapair{
+  padding-top: 50px;
+  position: relative;
+}
+.book-a-reapair img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.book-a-reapair .dec{
+  position: absolute;
+  top: 72px;
+  left: 80px;
+  z-index: 9;
+}
+.book-a-reapair .dec h1{
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 96px;
+  color: var(--white);
+  padding-bottom: 16px;
+}
+.book-a-reapair .dec p{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color:  var(--white);
+  padding-bottom: 36px;
+}
+.book-a-reapair .dec a{
+  display: inline-block;
+  background: var(--primary);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--white);
+  padding: 10px 20px;
+  border-radius: 4px;
+}
 
+/* ==================book-a-reapair-end==================== */
 
+/* =============brand-start============= */
+.brand{
+  position: relative;
+  width: 100%;
+  height: auto;
+  background: linear-gradient(110.71deg, rgba(30, 92, 221, 0.4) -10.78%, rgba(205, 191, 216, 0.43595) 50.74%);
+  margin: 72px 0 ;
+  padding: 72px 0;
+}
+/* =============brand-end============= */
 
+/* ===================about-mrfix-start================== */
+.about-mrfix{
+  width: 100%;
+  height: auto;
+  position: relative;
+  background: linear-gradient(242.59deg, #4B4B4B 33.84%, #000000 70.02%);
 
+}
 
+.about-tex h1{
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 54px;
+  color: var(--white);
+  padding: 100px 0 12px 0;
+}
+.about-tex p{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--white);
+  padding-bottom: 28px;
+  }
+  .about-tex a{
+    margin-bottom: 100px;
+    display: inline-block;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 8px 17px;
+  }
+  .fst-1{
+    margin: 100px 0 22px 0;
+  }
+  .ff{
+    background-color: #000;
+    color: var(--white);
+    margin-right: 20px;
+    width: 250px;
+    height: 124px;
+    border-radius: 16px;
+    
 
-
-
-
-
-
+  }
+  .ff img{
+    padding: 24px 0 24px 24px;
+  }
+  .ff h5{
+   padding:0 0 24px 24px ; 
+   font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+  
+  }
+/* ===================about-mrfix-end================== */
 
 
 
