@@ -213,6 +213,23 @@ button:focus {
   cursor: pointer;
 }
 
+
+.addBorder {
+  position: relative;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.addBorder::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: url(../images/title_border.svg) no-repeat center;
+  width: 100%;
+  height: 1px;
+}
+
 /*=============== Dynamic class End ==================*/
 
 /*=============== Input number filed plugin customize Start ==================*/
@@ -502,6 +519,16 @@ button:focus {
   position: relative;
   padding: 35px 0;
   min-height: 206px;
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+}
+
+.brand .box:hover h2 {
+  font-weight: 600;
+}
+
+.brand .box:nth-child(1):hover path {
+  fill: black;
 }
 
 .brand .box:nth-child(1):before {
@@ -524,6 +551,10 @@ button:focus {
   height: 1px;
 }
 
+.brand .box:nth-child(2):hover path {
+  fill: #034EA2;
+}
+
 .brand .box:nth-child(2):before {
   content: "";
   position: absolute;
@@ -542,6 +573,10 @@ button:focus {
   border-bottom: 1px solid #000;
   width: 100%;
   height: 1px;
+}
+
+.brand .box:nth-child(3):hover path {
+  fill: #CE0E2D;
 }
 
 .brand .box:nth-child(3):before {
@@ -564,6 +599,10 @@ button:focus {
   height: 1px;
 }
 
+.brand .box:nth-child(4):hover path {
+  fill: #F50514;
+}
+
 .brand .box:nth-child(4)::after {
   content: "";
   position: absolute;
@@ -572,6 +611,10 @@ button:focus {
   background: url(../images/brand_border2_right.svg) no-repeat center;
   width: 100%;
   height: 1px;
+}
+
+.brand .box:nth-child(5):hover path {
+  fill: #888B8D;
 }
 
 .brand .box:nth-child(5):before {
@@ -584,6 +627,10 @@ button:focus {
   height: 100%;
 }
 
+.brand .box:nth-child(6):hover path {
+  fill: black;
+}
+
 .brand .box:nth-child(6):before {
   content: "";
   position: absolute;
@@ -594,6 +641,10 @@ button:focus {
   height: 100%;
 }
 
+.brand .box:nth-child(7):hover path {
+  fill: #1C4598;
+}
+
 .brand .box:nth-child(7):before {
   content: "";
   position: absolute;
@@ -602,6 +653,10 @@ button:focus {
   background: url(../images/brand_border_bottom.svg) no-repeat center;
   width: 1px;
   height: 100%;
+}
+
+.brand .box:nth-child(8):hover path {
+  fill: black;
 }
 
 /*=============== Brand End ==================*/
@@ -937,7 +992,7 @@ button:focus {
   z-index: -1;
 }
 
-.underTab .nav-item:last-child .nav-link{
+.underTab .nav-item:last-child .nav-link {
   margin-right: 0 !important;
 }
 
@@ -945,7 +1000,8 @@ button:focus {
 .underTab .nav-link.active rect {
   stroke: var(--primary);
 }
-.underTab .nav-link.active circle{
+
+.underTab .nav-link.active circle {
   stroke: var(--primary);
   fill: var(--primary);
 }
@@ -1465,7 +1521,7 @@ button[disabled]:hover {
   padding: 50px 0 30px;
 }
 
-.sellBanner .container{
+.sellBanner .container {
   position: relative;
 }
 
@@ -1806,7 +1862,7 @@ button[disabled]:hover {
   margin-top: 55px;
 }
 
-.buyBanner .container{
+.buyBanner .container {
   position: relative;
 }
 
@@ -1873,6 +1929,26 @@ button[disabled]:hover {
   border-radius: 10px;
   height: 100%;
 }
+
+.productCategory .form-control {
+  min-width: 245px;
+  min-height: 36px;
+  border-color: #999;
+  font-size: 14px;
+  font-weight: 300;
+  padding-left: 42px;
+  border-radius: 4px;
+}
+
+.productCategory .search_Icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 14px;
+  display: block;
+  line-height: 0;
+}
+
 
 .productCategory ul {
   position: relative;
@@ -3227,20 +3303,16 @@ input[type=number] {
   cursor: pointer;
 }
 
-.returnModal .addBorder {
-  position: relative;
-  padding-bottom: 30px;
-  margin-bottom: 30px;
-}
-
-.returnModal .addBorder::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background: url(../images/title_border.svg) no-repeat center;
+.fileContainer input[type="file"] {
+  opacity: 0;
+  margin: 0;
+  padding: 0;
   width: 100%;
-  height: 1px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  cursor: pointer;
 }
 
 .returnModal .btnRq {
@@ -3255,10 +3327,96 @@ input[type=number] {
 
 /*=============== My Account End ==================*/
 
+/*=============== Brand__LogoSlider End ==================*/
+.Brand__LogoSlider .box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+}
+
+.Brand__LogoSlider .owl-stage{
+  display: flex;
+  align-items: flex-end;
+}
+
+.Brand__LogoSlider .owl-stage-outer{
+  z-index: 1;
+}
+
+.Brand__LogoSlider .Apple:hover path{
+  fill: black;
+}
+
+.Brand__LogoSlider .Samsung:hover path{
+  fill: #034EA2;
+}
+
+.Brand__LogoSlider .Huawei:hover path{
+  fill: #CE0E2D;
+}
+
+.Brand__LogoSlider .One-Plus:hover path{
+  fill: #F50514;
+}
+
+.Brand__LogoSlider .Google-Pixel:hover path{
+  fill: #737373;
+}
+
+.Brand__LogoSlider .Motorola:hover path{
+  fill: black;
+}
+
+.Brand__LogoSlider .Nokia:hover path{
+  fill: #1C4598;
+}
+
+.Brand__LogoSlider .Sony:hover path{
+  fill: black;
+}
+
+.Brand__LogoSlider .owl-theme .owl-nav {
+  margin: 0;
+  position: absolute;
+  top: 70%;
+  transform: translateY(-50%);
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.Brand__LogoSlider .owl-carousel .owl-nav button.owl-prev, 
+.Brand__LogoSlider .owl-carousel .owl-nav button.owl-next {
+  font-size: 30px;
+  font-weight: 200;
+  line-height: 20px;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  border-radius: 100%;
+}
+
+.Brand__LogoSlider .owl-carousel .owl-nav button.owl-prev {
+  margin-left: -10px;
+}
+
+.Brand__LogoSlider .owl-carousel .owl-nav button.owl-next {
+  margin-right: -10px;
+}
 
 
 
+.Brand__LogoSlider .box:hover h2{
+  font-weight: 600;
+}
 
+/*=============== Brand__LogoSlider End ==================*/
 
 
 
