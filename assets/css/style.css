@@ -57,6 +57,7 @@ a:focus {
 
 a:hover {
   text-decoration: none;
+  color: var(--primary);
 }
 
 h1,
@@ -3371,10 +3372,6 @@ input[type=number] {
   align-items: flex-end;
 }
 
-.Brand__LogoSlider .owl-stage-outer {
-  z-index: 1;
-}
-
 .Brand__LogoSlider .Apple:hover path {
   fill: black;
 }
@@ -3407,16 +3404,6 @@ input[type=number] {
   fill: black;
 }
 
-.Brand__LogoSlider .owl-theme .owl-nav {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 0;
-  width: 100%;
-  z-index: 1;
-}
-
 .Brand__LogoSlider .owl-carousel .owl-nav button.owl-prev,
 .Brand__LogoSlider .owl-carousel .owl-nav button.owl-next {
   font-size: 30px;
@@ -3429,6 +3416,9 @@ input[type=number] {
   border: 2px solid var(--primary);
   color: var(--primary);
   border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .Brand__LogoSlider .owl-carousel .owl-nav button.owl-prev {
@@ -3438,7 +3428,6 @@ input[type=number] {
 .Brand__LogoSlider .owl-carousel .owl-nav button.owl-next {
   position: absolute;
   right: -10px;
-  top: 0;
 }
 
 .Brand__LogoSlider .box:hover h2 {
@@ -3452,6 +3441,142 @@ input[type=number] {
   background: #F5F5F5;
   border-radius: 8px;
   padding: 30px;
+}
+
+.unlockPage .nav-tabs {
+  border: inherit;
+}
+
+.unlockPage .nav-tabs .nav-link {
+  background: transparent;
+  border-color: transparent;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: var(--black-dark);
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.unlockPage .nav-tabs .nav-item:last-child .nav-link {
+  margin-bottom: 0;
+}
+
+.unlockPage .nav-tabs .nav-link.active {
+  color: var(--primary);
+}
+
+.unlockPage .nav-tabs .nav-link.active path {
+  stroke: var(--primary);
+}
+
+.unlockPage .nav-tabs .nav-link:hover path {
+  stroke: var(--primary);
+}
+
+.unlockPage .nav-tabs .nav-link:hover {
+  color: var(--primary);
+}
+
+.unlockPage .boxDevice {
+  display: flex;
+  align-items: center;
+  border: 1px solid #c3c1c1;
+  border-radius: 12px;
+  padding: 20px 25px;
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.unlockPage .boxDevice:hover {
+  border-color: var(--primary);
+}
+
+.unlockPage .boxDevice .imgBlock {
+  width: 55px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-right: 30px;
+}
+
+.unlockPage .boxDevice .imgBlock img {
+  height: 75px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.unlockPage .boxDevice h2 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.unlockPage .active {
+  border-color: var(--primary);
+}
+
+.unlockPage .boxDevice.active h2 {
+  font-weight: 600;
+}
+
+.unlockPage .boxDesc input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.unlockPage .boxDesc .checkBox {
+  font-size: 14px;
+  margin-bottom: 0;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.unlockPage .boxDesc label:before {
+  content: '';
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 2px solid #ced4da;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 5%), inset 0px -15px 10px -12px rgb(0 0 0 / 5%);
+  padding: 9px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 3px;
+}
+
+.unlockPage .boxDesc input:checked+label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 8px;
+  width: 6px;
+  height: 10px;
+  border: solid var(--primary);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.unlockPage .ProceedTo {
+  border-radius: 4px;
+  background: var(--primary);
+  font-size: 18px;
+  color: var(--white);
+  font-weight: bold;
+  padding: 12px 5px;
+  width: 100%;
+  text-align: center;
 }
 
 /*=============== Unlock Page End ==================*/
