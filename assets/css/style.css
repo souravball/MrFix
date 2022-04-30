@@ -381,6 +381,35 @@ button:focus {
   color: var(--primary);
 }
 
+.before-login-header ul li a {
+  color: var(--white);
+  font-size: 15px;
+  font-weight: 600;
+  position: relative;
+  margin-left: 40px;
+}
+
+/* .navigation ul li a.active {
+  color: var(--primary);
+} */
+
+.before-login-header ul li a.active::after {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--primary);
+  border-radius: 100%;
+  width: 6px;
+  height: 6px;
+}
+
+
+.before-login-header ul li a:hover {
+  color: var(--primary);
+}
+
 /*=============== Header End ==================*/
 
 /*=============== Banner Start ==================*/
