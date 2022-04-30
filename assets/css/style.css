@@ -405,7 +405,6 @@ button:focus {
   height: 6px;
 }
 
-
 .before-login-header ul li a:hover {
   color: var(--primary);
 }
@@ -1466,9 +1465,11 @@ button[disabled]:hover {
   text-align: center;
   font-weight: bold;
 }
-.add-clour-from{
-  background:  linear-gradient(180deg, #FFF1E4 0%, rgba(255, 246, 238, 0) 100%) !important;
+
+.add-clour-from {
+  background: linear-gradient(180deg, #FFF1E4 0%, rgba(255, 246, 238, 0) 100%) !important;
 }
+
 /*=============== Get in Touch End ==================*/
 
 /*=============== Footer Start ==================*/
@@ -3357,7 +3358,7 @@ input[type=number] {
 /*=============== My Account End ==================*/
 
 /*=============== Brand__LogoSlider End ==================*/
-.Brand__LogoSlider .box{
+.Brand__LogoSlider .box {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -3365,59 +3366,58 @@ input[type=number] {
   cursor: pointer;
 }
 
-.Brand__LogoSlider .owl-stage{
+.Brand__LogoSlider .owl-stage {
   display: flex;
   align-items: flex-end;
 }
 
-.Brand__LogoSlider .owl-stage-outer{
+.Brand__LogoSlider .owl-stage-outer {
   z-index: 1;
 }
 
-.Brand__LogoSlider .Apple:hover path{
+.Brand__LogoSlider .Apple:hover path {
   fill: black;
 }
 
-.Brand__LogoSlider .Samsung:hover path{
+.Brand__LogoSlider .Samsung:hover path {
   fill: #034EA2;
 }
 
-.Brand__LogoSlider .Huawei:hover path{
+.Brand__LogoSlider .Huawei:hover path {
   fill: #CE0E2D;
 }
 
-.Brand__LogoSlider .One-Plus:hover path{
+.Brand__LogoSlider .One-Plus:hover path {
   fill: #F50514;
 }
 
-.Brand__LogoSlider .Google-Pixel:hover path{
+.Brand__LogoSlider .Google-Pixel:hover path {
   fill: #737373;
 }
 
-.Brand__LogoSlider .Motorola:hover path{
+.Brand__LogoSlider .Motorola:hover path {
   fill: black;
 }
 
-.Brand__LogoSlider .Nokia:hover path{
+.Brand__LogoSlider .Nokia:hover path {
   fill: #1C4598;
 }
 
-.Brand__LogoSlider .Sony:hover path{
+.Brand__LogoSlider .Sony:hover path {
   fill: black;
 }
 
 .Brand__LogoSlider .owl-theme .owl-nav {
   margin: 0;
   position: absolute;
-  top: 70%;
+  top: 50%;
   transform: translateY(-50%);
   left: 0;
-  display: flex;
-  justify-content: space-between;
   width: 100%;
+  z-index: 1;
 }
 
-.Brand__LogoSlider .owl-carousel .owl-nav button.owl-prev, 
+.Brand__LogoSlider .owl-carousel .owl-nav button.owl-prev,
 .Brand__LogoSlider .owl-carousel .owl-nav button.owl-next {
   font-size: 30px;
   font-weight: 200;
@@ -3436,18 +3436,25 @@ input[type=number] {
 }
 
 .Brand__LogoSlider .owl-carousel .owl-nav button.owl-next {
-  margin-right: -10px;
+  position: absolute;
+  right: -10px;
+  top: 0;
 }
 
-
-
-.Brand__LogoSlider .box:hover h2{
+.Brand__LogoSlider .box:hover h2 {
   font-weight: 600;
 }
 
 /*=============== Brand__LogoSlider End ==================*/
 
+/*=============== Unlock Page Start ==================*/
+.unlockPage .boxDesc {
+  background: #F5F5F5;
+  border-radius: 8px;
+  padding: 30px;
+}
 
+/*=============== Unlock Page End ==================*/
 
 
 
