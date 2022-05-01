@@ -130,6 +130,11 @@ button:focus {
   color: var(--gren);
 }
 
+
+.txt-blue {
+  color: #034EA2;
+}
+
 .txt-white {
   color: var(--white);
 }
@@ -3577,6 +3582,68 @@ input[type=number] {
   padding: 12px 5px;
   width: 100%;
   text-align: center;
+}
+
+.unlockPage .setIcon {
+  border: 1px solid #ced4da;
+  width: 55px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  margin-bottom: 6px;
+  cursor: pointer;
+  transition: 400ms all ease-in-out;
+}
+
+.unlockPage .setIcon.active {
+  border-color: var(--primary);
+}
+
+.unlockPage .setIcon:hover {
+  border-color: var(--primary);
+}
+
+.unlockPage .form-control{
+  height: 44px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.unlockPage .form-control:focus{
+  box-shadow: inherit;
+  border-color: var(--primary);
+}
+
+
+.unlockPage .smallInput{
+  width: 44px;
+  background: #F5F5F5;
+}
+
+.unlockPage textarea{
+  resize: none;
+  min-height: 149px;
+}
+
+.unlockPage .table thead {
+  border-color: inherit;
+  border-style: hidden;
+  border-width: 0;
+  position: relative;
+  background: #F5F5F5;
+  padding: 0 30px;
+}
+
+.unlockPage .table tbody {
+  border-color: inherit;
+  border-style: hidden;
+  border-width: 0;
+}
+
+.unlockPage .table tbody td {
+  padding: 20px 8px;
 }
 
 /*=============== Unlock Page End ==================*/
