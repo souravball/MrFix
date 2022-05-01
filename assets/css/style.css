@@ -314,7 +314,7 @@ button:focus {
 }
 
 .header .form-control:focus {
-  border-color: #cccbcb;
+  border-color: var(--primary);
   box-shadow: inherit;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -2847,7 +2847,6 @@ button[disabled]:hover {
 }
 
 .accesoriesProducrCat ul li.active a path {
-  /* fill: var(--primary);   */
   stroke: var(--primary);
 }
 
@@ -2856,10 +2855,42 @@ button[disabled]:hover {
 }
 
 .accesoriesProducrCat ul li a:hover path {
-  /* fill: var(--primary);   */
   stroke: var(--primary);
 }
 
+.accesoriesProducrCat ul li a:hover circle {
+  stroke: var(--primary);
+}
+
+.accesoriesProducrCat .owl-carousel .owl-stage {
+  display: flex;
+  align-items: flex-end;
+}
+
+.accesoriesProducrCat .owl-carousel .owl-nav button.owl-prev,
+.accesoriesProducrCat .owl-carousel .owl-nav button.owl-next {
+  font-size: 30px;
+  font-weight: 200;
+  line-height: 20px;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.accesoriesProducrCat .owl-carousel .owl-nav button.owl-prev {
+  margin-left: -10px;
+}
+
+.accesoriesProducrCat .owl-carousel .owl-nav button.owl-next {
+  right: -10px;
+}
 
 /*== ProducrCat End ==*/
 
@@ -3431,7 +3462,6 @@ input[type=number] {
 }
 
 .Brand__LogoSlider .owl-carousel .owl-nav button.owl-next {
-  position: absolute;
   right: -10px;
 }
 
@@ -3605,24 +3635,24 @@ input[type=number] {
   border-color: var(--primary);
 }
 
-.unlockPage .form-control{
+.unlockPage .form-control {
   height: 44px;
   font-size: 14px;
   font-weight: 300;
 }
 
-.unlockPage .form-control:focus{
+.unlockPage .form-control:focus {
   box-shadow: inherit;
   border-color: var(--primary);
 }
 
 
-.unlockPage .smallInput{
+.unlockPage .smallInput {
   width: 44px;
   background: #F5F5F5;
 }
 
-.unlockPage textarea{
+.unlockPage textarea {
   resize: none;
   min-height: 149px;
 }
@@ -3648,16 +3678,212 @@ input[type=number] {
 
 /*=============== Unlock Page End ==================*/
 
+/*=============== Deals page Start ==================*/
+.dealsPage .offerSec .desc {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 50px;
+}
 
+.dealsPage .offerSec .desc h2 {
+  font-size: 64px;
+  font-weight: 700;
+}
 
+.dealsPage .productBox {
+  margin-bottom: 0px;
+}
 
+.dealsPage .discountBox {
+  position: absolute;
+  top: 3%;
+  left: 3%;
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  overflow: hidden;
+  text-align: center;
+  background: linear-gradient(136.09deg, #FF8C46 17.73%, #F85D5F 89.71%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.dealsPage .discountBox h2 {
+  font-size: 14px;
+  color: var(--white);
+  font-weight: 600;
+  line-height: 16px;
+}
 
+/*=============== Deals page End ==================*/
 
+/*=============== Repair-statusPage Start ==================*/
+.repair-statusPage {
+  background: #F5F5F5;
+  border-radius: 20px;
+  padding: 30px;
+}
 
+.repair-statusPage .rtBox {
+  border: 1px solid #858585;
+  width: 400px;
+  border-radius: 8px;
+  background: #DDDDDD;
+  overflow: hidden;
+}
 
+.repair-statusPage .rtBox p {
+  border-bottom: 1px solid #858585;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 12px;
+}
 
+.repair-statusPage .rtBox p span {
+  background: var(--white);
+  width: 110px;
+  padding: 8px 12px;
+  font-weight: 600;
+  min-height: 38px;
+}
 
+.repair-statusPage .table-responsive {
+  border: 1px solid #858585;
+  border-radius: 8px;
+}
+
+.repair-statusPage .table {
+  margin-bottom: 0;
+}
+
+.repair-statusPage .table thead {
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.repair-statusPage .table tbody {
+  border-color: #858585;
+  border-style: solid;
+  border: inherit;
+  border-bottom: transparent;
+  font-size: 16px;
+}
+
+.repair-statusPage .table tbody .prog {
+  background: #1CA0F2;
+  border-radius: 4px;
+  color: var(--white);
+  text-transform: uppercase;
+  padding: 5px 9px;
+  font-weight: bold;
+}
+
+.repair-statusPage .table thead td {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.repair-statusPage .table tbody td {
+  padding: 20px;
+}
+
+/*=============== Repair-statusPage End ==================*/
+
+/*=============== Track My Order Page Start ==================*/
+.trackMyOrder .orderDits {
+  background: #F5F5F5;
+  border-radius: 8px;
+  padding: 13px 20px;
+}
+
+.trackMyOrder .invoice {
+  border: inherit;
+  font-weight: 600;
+  color: var(--primary);
+  font-size: 18px;
+  background: transparent;
+}
+
+.trackMyOrder .imgDit {
+  width: 122px;
+  height: 122px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trackMyOrder .imgDit img {
+  width: 100%;
+  height: 122px;
+  object-fit: contain;
+}
+
+.trackMyOrder .progressBarItem{
+  margin-right: 70px;
+}
+
+.trackMyOrder .progressBarItem span {
+  border-radius: 100%;
+  width: 24px;
+  height: 24px;
+  border: 1px solid var(--primary);
+  position: relative;
+  z-index: 1;
+  background: var(--white);
+}
+
+.trackMyOrder .progressBarItem span::before{
+ content: "";
+ position: absolute;
+ top: 50%;
+ right: -160px;
+ transform: translateY(-50%);
+ width: 150px;
+ height: 1px;
+ border-top: 1px dotted var(--primary);
+ z-index: -1;
+}
+
+.trackMyOrder .progressBarItem span::after{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 8px;
+  width: 6px;
+  height: 10px;
+  border: solid var(--white);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+ }
+
+.trackMyOrder .progressBarItem.barHide span::before{
+  display: none;
+}
+
+.trackMyOrder .progressBarItem.active span {
+  background: var(--primary);
+}
+
+.trackMyOrder .progressBarItem.active span::before{
+  border-top: 1px solid var(--primary);
+}
+
+.trackMyOrder .progressBarItem.active h2{
+  font-weight: 600;
+}
+
+.trackMyOrder .progressBarItem.active h3{
+  font-weight: 600;
+}
+
+/*=============== Track My Order Page End ==================*/
 
 
 
@@ -3708,7 +3934,17 @@ input[type=number] {
   }
 }
 
-@media(max-width:1280px) {}
+@media(max-width:1280px) {
+
+  .trackMyOrder .itemDitsBar{
+    justify-content: center !important;
+  margin: 70px 0 !important;
+  }
+
+  .trackMyOrder .rtSideBar{
+    margin-top: 50px;
+  }
+}
 
 @media(max-width:1200px) {}
 
