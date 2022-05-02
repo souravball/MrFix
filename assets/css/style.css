@@ -3885,8 +3885,85 @@ input[type=number] {
 
 /*=============== Track My Order Page End ==================*/
 
+/* ====================== login-modal-start =============== */
+.loginModal .modal-dialog-centered{
+  max-width: 755px;
+  border-radius: 8px;
+}
+
+.loginModal .form-control{
+  min-height: 44px;
+  outline: none;
+  border: 1px solid var(--black);
+  border-radius: 4px;
+}
+
+.loginModal .form-control:focus{
+  box-shadow: inherit;
+}
+
+.loginModal .btnLogin{
+  display: inline-block;
+  border-radius: 4px;
+  background: var(--primary);
+  font-size: 18px;
+  color: var(--white);
+  font-weight: bold;
+  padding: 12px 40px;
+}
+
+.loginModal .login-google-btn{
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  background: var(--primary);
+  font-size: 18px;
+  color: var(--white);
+  font-weight: 600;
+  padding: 9px 20px;
+  width: 100%;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.loginModal .fbbg{
+  background:#1877F2; 
+  margin-top: 60px;
+}
+
+.loginModal .adLeft_border{
+  position: relative;
+  margin-left: 45px;
+  padding-left: 45px;
+}
+
+.loginModal .adLeft_border::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 25%;
+  border-left: 1px solid #e5e2e2;
+  height: 120px;
+  width: 1px;
+}
+
+.loginModal .adLeft_border::after{
+  content: "OR";
+    position: absolute;
+    left: -18px;
+    top: 47%;
+    border: 1px solid #e5e2e2;
+    height: 36px;
+    width: 36px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--white);
+}
 
 
+/* ====================== login-modal-end =============== */
 
 
 
