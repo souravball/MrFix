@@ -35,11 +35,12 @@ body {
   font-size: 1rem;
   color: var(--black-dark);
   overflow-x: hidden;
+  padding-right: 0 !important;
 }
 
-.modal-open {
-  padding-right: 0px !important;
-}
+/* body.modal-open {
+  padding-right: 0 !important;
+} */
 
 a {
   text-decoration: none;
@@ -99,6 +100,7 @@ button:focus {
   text-decoration: none;
   list-style: none;
   outline: none;
+  box-shadow: inherit !important;
 }
 
 /*=============== Dynamic class start ==================*/
@@ -3824,7 +3826,7 @@ input[type=number] {
   object-fit: contain;
 }
 
-.trackMyOrder .progressBarItem{
+.trackMyOrder .progressBarItem {
   margin-right: 70px;
 }
 
@@ -3838,19 +3840,19 @@ input[type=number] {
   background: var(--white);
 }
 
-.trackMyOrder .progressBarItem span::before{
- content: "";
- position: absolute;
- top: 50%;
- right: -160px;
- transform: translateY(-50%);
- width: 150px;
- height: 1px;
- border-top: 1px dotted var(--primary);
- z-index: -1;
+.trackMyOrder .progressBarItem span::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -160px;
+  transform: translateY(-50%);
+  width: 150px;
+  height: 1px;
+  border-top: 1px dotted var(--primary);
+  z-index: -1;
 }
 
-.trackMyOrder .progressBarItem span::after{
+.trackMyOrder .progressBarItem span::after {
   content: '';
   display: block;
   position: absolute;
@@ -3861,9 +3863,9 @@ input[type=number] {
   border: solid var(--white);
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
- }
+}
 
-.trackMyOrder .progressBarItem.barHide span::before{
+.trackMyOrder .progressBarItem.barHide span::before {
   display: none;
 }
 
@@ -3871,38 +3873,39 @@ input[type=number] {
   background: var(--primary);
 }
 
-.trackMyOrder .progressBarItem.active span::before{
+.trackMyOrder .progressBarItem.active span::before {
   border-top: 1px solid var(--primary);
 }
 
-.trackMyOrder .progressBarItem.active h2{
+.trackMyOrder .progressBarItem.active h2 {
   font-weight: 600;
 }
 
-.trackMyOrder .progressBarItem.active h3{
+.trackMyOrder .progressBarItem.active h3 {
   font-weight: 600;
 }
 
 /*=============== Track My Order Page End ==================*/
 
-/* ====================== login-modal-start =============== */
-.loginModal .modal-dialog-centered{
+/* ====================== login-modal- css start =============== */
+.loginModal .modal-dialog-centered {
   max-width: 755px;
   border-radius: 8px;
 }
 
-.loginModal .form-control{
+.loginModal .form-control {
   min-height: 44px;
   outline: none;
-  border: 1px solid var(--black);
+  border: 1px solid #adadad;
   border-radius: 4px;
 }
 
-.loginModal .form-control:focus{
+.loginModal .form-control:focus {
   box-shadow: inherit;
+  border-color: var(--primary);
 }
 
-.loginModal .btnLogin{
+.loginModal .btnLogin {
   display: inline-block;
   border-radius: 4px;
   background: var(--primary);
@@ -3912,7 +3915,7 @@ input[type=number] {
   padding: 12px 40px;
 }
 
-.loginModal .login-google-btn{
+.loginModal .login-google-btn {
   display: flex;
   align-items: center;
   border-radius: 4px;
@@ -3926,18 +3929,18 @@ input[type=number] {
   margin-top: 30px;
 }
 
-.loginModal .fbbg{
-  background:#1877F2; 
+.loginModal .fbbg {
+  background: #1877F2;
   margin-top: 60px;
 }
 
-.loginModal .adLeft_border{
+.loginModal .adLeft_border {
   position: relative;
   margin-left: 45px;
   padding-left: 45px;
 }
 
-.loginModal .adLeft_border::before{
+.loginModal .adLeft_border::before {
   content: "";
   position: absolute;
   left: 0;
@@ -3947,23 +3950,93 @@ input[type=number] {
   width: 1px;
 }
 
-.loginModal .adLeft_border::after{
+.loginModal .adLeft_border::after {
   content: "OR";
-    position: absolute;
-    left: -18px;
-    top: 47%;
-    border: 1px solid #e5e2e2;
-    height: 36px;
-    width: 36px;
-    border-radius: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--white);
+  position: absolute;
+  left: -18px;
+  top: 49%;
+  border: 1px solid #e5e2e2;
+  height: 36px;
+  width: 36px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--white);
 }
 
+.registerModal .modal-dialog-centered{
+  max-width: 680px;
+}
 
-/* ====================== login-modal-end =============== */
+.loginModal .footerBtn{
+  position: relative;
+  margin-top: 50px;
+  padding-top: 50px;
+}
+
+.loginModal .footerBtn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  border-top: 1px solid #e5e2e2;
+  height: 1px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.loginModal .footerBtn::after {
+  content: "OR";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -20%;
+  border: 1px solid #e5e2e2;
+  height: 36px;
+  width: 36px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--white);
+  margin: 0 auto;
+}
+
+.forgotPasswordModal .modal-dialog-centered{
+  max-width: 430px;
+}
+
+/* ====================== login-modal- css End =============== */
+
+/* ====================== About Page Home css Start =============== */
+.aboutHomePage{
+  margin: 120px 0;
+}
+
+.aboutHomePage h2{
+  font-size: 64px;
+}
+
+/* ======================  About Page Home css End =============== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -4013,12 +4086,12 @@ input[type=number] {
 
 @media(max-width:1280px) {
 
-  .trackMyOrder .itemDitsBar{
+  .trackMyOrder .itemDitsBar {
     justify-content: center !important;
-  margin: 70px 0 !important;
+    margin: 70px 0 !important;
   }
 
-  .trackMyOrder .rtSideBar{
+  .trackMyOrder .rtSideBar {
     margin-top: 50px;
   }
 }
