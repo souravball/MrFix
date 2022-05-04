@@ -4018,6 +4018,36 @@ input[type=number] {
 .aboutHomePage h2{
   font-size: 64px;
 }
+.process-we-follow h1{
+  font-size: 64px;
+  font-weight: 700;
+  padding-bottom: 12px;
+}
+.process-we-follow h5{
+  font-size: 16px;
+  font-weight: 600;
+  padding-top: 24px;
+  padding-bottom: 8px;
+}
+.process-we-follow p{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  opacity: 0.5;
+}
+.we-promise h1{
+  font-size: 64px;
+  font-weight: 700;
+}
+.we-promise button{
+  background: var(--primary);
+  padding: 10px 24px;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--white);
+  border-radius: 4px;
+  margin-top: 52px;
+}
 
 /* ======================  About Page Home css End =============== */
 
