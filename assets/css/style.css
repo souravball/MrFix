@@ -4048,7 +4048,41 @@ input[type=number] {
   border-radius: 4px;
   margin-top: 52px;
 }
+.Our-most-recent-reviews{
+  background: linear-gradient(115.34deg, #4B4B4B 24.18%, #000000 97.87%);
+  padding-bottom: 140px;
+  padding-top: 120px;
+}
+.Our-most-recent-reviews .reviews-box{
+  background: var(--black);
+  border-radius: 16px;
+  margin-top: 76px;
+}
+.Our-most-recent-reviews .reviews-box h5{
+  color: #999897;
+}
+.Our-most-recent-reviews .reviews-popfile{
+  width: 64px;
+  height: 64px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.Our-most-recent-reviews .reviews-popfile img{
+  width: 100%;
+  object-fit: contain;
+  height: 64px;
+}
 
+.why-mrfix-section{
+  background: #EDEDED;
+  padding: 100px 0 100px 0;
+  margin-top: 150px;
+}
+.why-mrfix-section .service-icon{
+  width:48px;
+  text-align: center;
+  
+}
 /* ======================  About Page Home css End =============== */
 
 
