@@ -4081,8 +4081,27 @@ input[type=number] {
 .why-mrfix-section .service-icon{
   width:48px;
   text-align: center;
-  
 }
+.pick-service-location iframe{
+  border-radius: 16px;
+}
+
+.pick-service-location .titelTxt{
+  position: relative;
+  padding-left: 40px;
+}
+
+.pick-service-location .titelTxt::before{
+  content: "";
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  background: var(--primary);
+  position: absolute;
+  top: 9px;
+  left: 0;
+}
+
 /* ======================  About Page Home css End =============== */
 
 
