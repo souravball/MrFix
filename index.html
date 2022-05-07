@@ -57,7 +57,7 @@
 			</div>
 			<nav class="navigation">
 				<ul id="navigat" class="d-flex align-items-center justify-content-between">
-					<li><a href="#" class="">Repairs</a></li>
+					<li><a href="index.html" class="">Repairs</a></li>
 					<li><a href="accesories.html" class="">Accesories</a></li>
 					<li><a href="buy.html" class="">Buy</a></li>
 					<li><a href="sell.html" class="">Sell</a></li>
@@ -1982,6 +1982,15 @@
 			element.value = element.value.replace(/[^0-9]/gi, "");
 		};
 
+		jQuery(function ($) {
+			var path = window.location.href;
+			$('ul a').each(function () {
+				if (this.href === path) {
+					$(this).addClass('active');
+				}
+			});
+		});
+
 		$(".js-example-disabled-results").select2({});
 
 		$(".selectTimeBtn").click(function () {
@@ -2011,14 +2020,7 @@
 			utilsScript: "assets/js/utils.js",
 		});
 
-		jQuery(function ($) {
-			var path = window.location.href;
-			$('ul a').each(function () {
-				if (this.href === path) {
-					$(this).addClass('active');
-				}
-			});
-		});
+		
 	</script>
 </body>
 
