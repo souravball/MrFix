@@ -438,6 +438,134 @@
     </section>
     <!-- Sell Banner End -->
 
+    <!-- Related Products Start -->
+    <section class="">
+        <div class="container">
+            <div class="relatedProducts borderHide mt-0 pt-0">
+                <div class="d-flex justify-content-between align-items-center mb-5">
+                    <h2 class="mb-0">Deals on Smartphones</h2>
+                    <a href="#" class="d-block font-size-18 fw-semi-bold txt-primary">View All ></a>
+                </div>
+                <div class="owl-carousel owl-theme dealsPro">
+                    <div class="item">
+                        <div class="productBox mb-0 d-flex flex-column align-items-center">
+                            <div class="img_box mb-3">
+                                <img src="assets/images/mobile_img.png" alt="">
+                            </div>
+                            <div class="text-center">
+                                <h3 class="font-size-18">iPhone 13 Pro</h3>
+                                <h4>£649.99 - £799.99</h4>
+                                <a href="buy_product.html" class="det">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="productBox mb-0 d-flex flex-column align-items-center">
+                            <div class="img_box mb-3">
+                                <img src="assets/images/mobile_img.png" alt="">
+                            </div>
+                            <div class="text-center">
+                                <h3 class="font-size-18">iPhone 13 Pro</h3>
+                                <h4>£649.99 - £799.99</h4>
+                                <a href="buy_product.html" class="det">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="productBox mb-0 d-flex flex-column align-items-center">
+                            <div class="img_box mb-3">
+                                <img src="assets/images/mobile_img.png" alt="">
+                            </div>
+                            <div class="text-center">
+                                <h3 class="font-size-18">iPhone 13 Pro</h3>
+                                <h4>£649.99 - £799.99</h4>
+                                <a href="buy_product.html" class="det">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="productBox mb-0 d-flex flex-column align-items-center">
+                            <div class="img_box mb-3">
+                                <img src="assets/images/mobile_img.png" alt="">
+                            </div>
+                            <div class="text-center">
+                                <h3 class="font-size-18">iPhone 13 Pro</h3>
+                                <h4>£649.99 - £799.99</h4>
+                                <a href="buy_product.html" class="det">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="productBox mb-0 d-flex flex-column align-items-center">
+                            <div class="img_box mb-3">
+                                <img src="assets/images/mobile_img.png" alt="">
+                            </div>
+                            <div class="text-center">
+                                <h3 class="font-size-18">iPhone 13 Pro</h3>
+                                <h4>£649.99 - £799.99</h4>
+                                <a href="buy_product.html" class="det">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="productBox mb-0 d-flex flex-column align-items-center">
+                            <div class="img_box mb-3">
+                                <img src="assets/images/mobile_img.png" alt="">
+                            </div>
+                            <div class="text-center">
+                                <h3 class="font-size-18">iPhone 13 Pro</h3>
+                                <h4>£649.99 - £799.99</h4>
+                                <a href="buy_product.html" class="det">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Related Products End -->
+    
+    <!-- Brand Adds Start -->
+    <section class="brandsAdds">
+        <div class="container d-flex justify-content-between flex-wrap">
+            <div class="box d-flex align-items-end justify-content-between mb-4">
+                <div>
+                    <h2 class="font-size-36 fw-semi-bold">All Brand Spareparts</h2>
+                    <button class="my-4">Shop Now</button>
+                    <h3 class="font-size-18">Best rates in the UK*</h3>
+                </div>
+                <div class="imgbox">
+                    <img src="assets/images/brandAddsimg-1.png" alt="">
+                </div>
+            </div>
+            <div class="box bgAdd2 mb-4">
+                <h2 class="font-size-36 fw-semi-bold mb-3">Unlock  your phone
+                to any network</h2>
+                <div class="d-flex align-items-center justify-content-between">
+                    <div>
+                        <button class="mb-5">Unlock Now</button>
+                        <h3 class="font-size-18">Takes 2-3 business datys*</h3>
+                    </div>
+                    <div class="imgbox">
+                        <img src="assets/images/brandAddsimg-2.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="box bgAdd3 d-flex align-items-end justify-content-between mb-4">
+                <div>
+                    <h2 class="font-size-36 fw-semi-bold">Track your
+                        repair status</h2>
+                    <button class="my-4">Track Now</button>
+                    <h3 class="font-size-18">If not please give us call.</h3>
+                </div>
+                <div class="imgbox">
+                    <img src="assets/images/brandAddsimg-3.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Brand Adds End -->
+
     <!-- Get in Touch Start -->
     <section class="Get-in-Touch py-5">
         <div class="container">
@@ -701,6 +829,24 @@
                 },
                 1000: {
                     items: 1
+                }
+            }
+        });
+
+        $('.dealsPro').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
                 }
             }
         });
