@@ -2081,8 +2081,36 @@ button[disabled]:hover {
   object-fit: contain;
 }
 
+.laptopImg .img_box {
+  width: 200px;
+  height: 185px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.laptopImg .img_box img {
+  width: 100%;
+  height: 185px;
+  object-fit: contain;
+}
+
 .productBox {
   margin-bottom: 60px;
+  overflow: hidden;
+}
+
+.productBox .text-center{
+  width: 100%; 
+}
+
+.productBox h3{
+  white-space: nowrap; 
+  width: 80%; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  margin: 0 auto;
 }
 
 .productBox h4 {
@@ -2712,9 +2740,9 @@ button[disabled]:hover {
 
 .relatedProducts .owl-carousel .owl-nav button.owl-prev,
 .relatedProducts .owl-carousel .owl-nav button.owl-next {
-  font-size: 70px;
+  font-size: 50px;
   font-weight: 100;
-  line-height: 33px;
+  line-height: 36px;
   width: 40px;
   height: 40px;
   display: flex;
@@ -4185,21 +4213,21 @@ input[type=number] {
 /* ==================== Frame-41 Start ===================== */
 .brandsAdds .box {
   background: linear-gradient(106.13deg, rgba(30, 92, 221, 0.4) 10.11%,
-  rgba(205, 191, 216, 0.43595) 51.45%);
+      rgba(205, 191, 216, 0.43595) 51.45%);
   border-radius: 16px;
   padding: 30px;
   width: 510px;
 }
 
-.brandsAdds .bgAdd2{
+.brandsAdds .bgAdd2 {
   background: linear-gradient(134.56deg, #FEC258 14.71%, #F2C1AE 74.81%);
 }
 
-.brandsAdds .bgAdd3{
+.brandsAdds .bgAdd3 {
   background: linear-gradient(123.64deg, #D5F0FF 14.46%, #E5FFE4 84.45%);
 }
 
-.brandsAdds .box button{
+.brandsAdds .box button {
   font-size: 14px;
   font-weight: 600;
   color: var(--white);
@@ -4208,8 +4236,41 @@ input[type=number] {
   padding: 8px 20px;
 }
 
-.brandsAdds .imgbox{
+.brandsAdds .imgbox {
   flex-shrink: 0;
+}
+
+.fastShipping{
+  background: #EDEDED;
+  border-radius: 20px;
+  padding: 45px;
+}
+
+.sellAllBrands{
+  background: linear-gradient(110.71deg, rgba(30, 92, 221, 0.4) -10.78%, 
+  rgba(205, 191, 216, 0.43595) 50.74%);
+  padding: 70px 0;
+}
+
+.aboutMrfix_About{
+  background: linear-gradient(242.59deg, #4B4B4B 33.84%, #000000 70.02%);
+  padding: 80px 0;
+}
+
+.aboutMrfix_About button{
+  font-size: 14px;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  border-radius: 4px;
+  padding: 7px 17px;
+  background: transparent;
+}
+
+.aboutMrfix_About .box{
+  background: var(--black);
+  padding: 24px;
+  border-radius: 16px;
+  min-width: 30%;
 }
 
 /* ==================== Frame-41 End ===================== */
@@ -4251,6 +4312,14 @@ input[type=number] {
 
   .sellBanner .desc {
     width: 55%;
+  }
+
+  .brandsAdds .box {
+    width: 33%;
+  }
+
+  .brandsAdds .imgbox {
+    flex-shrink: 1;
   }
 
 }
