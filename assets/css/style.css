@@ -1619,7 +1619,7 @@ button[disabled]:hover {
   margin-top: 25px;
 }
 
-.sellBanner .owl-theme .owl-dots .owl-dot span{
+.sellBanner .owl-theme .owl-dots .owl-dot span {
   width: 8px;
   height: 2px;
   border-radius: 0;
@@ -2081,8 +2081,36 @@ button[disabled]:hover {
   object-fit: contain;
 }
 
+.laptopImg .img_box {
+  width: 200px;
+  height: 185px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.laptopImg .img_box img {
+  width: 100%;
+  height: 185px;
+  object-fit: contain;
+}
+
 .productBox {
   margin-bottom: 60px;
+  overflow: hidden;
+}
+
+.productBox .text-center{
+  width: 100%; 
+}
+
+.productBox h3{
+  white-space: nowrap; 
+  width: 80%; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  margin: 0 auto;
 }
 
 .productBox h4 {
@@ -2688,6 +2716,10 @@ button[disabled]:hover {
   height: 1px;
 }
 
+.borderHide::after {
+  display: none;
+}
+
 .relatedProducts h2 {
   font-size: 36px;
   font-weight: 600;
@@ -2708,9 +2740,9 @@ button[disabled]:hover {
 
 .relatedProducts .owl-carousel .owl-nav button.owl-prev,
 .relatedProducts .owl-carousel .owl-nav button.owl-next {
-  font-size: 70px;
+  font-size: 50px;
   font-weight: 100;
-  line-height: 33px;
+  line-height: 36px;
   width: 40px;
   height: 40px;
   display: flex;
@@ -2901,7 +2933,7 @@ button[disabled]:hover {
   color: var(--primary);
   border-radius: 100%;
   position: absolute;
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
 }
 
@@ -3984,11 +4016,11 @@ input[type=number] {
   background: var(--white);
 }
 
-.registerModal .modal-dialog-centered{
+.registerModal .modal-dialog-centered {
   max-width: 680px;
 }
 
-.loginModal .footerBtn{
+.loginModal .footerBtn {
   position: relative;
   margin-top: 50px;
   padding-top: 50px;
@@ -4023,42 +4055,47 @@ input[type=number] {
   margin: 0 auto;
 }
 
-.forgotPasswordModal .modal-dialog-centered{
+.forgotPasswordModal .modal-dialog-centered {
   max-width: 430px;
 }
 
 /* ====================== login-modal- css End =============== */
 
 /* ====================== About Page Home css Start =============== */
-.aboutHomePage{
+.aboutHomePage {
   margin: 120px 0;
 }
 
-.aboutHomePage h2{
+.aboutHomePage h2 {
   font-size: 64px;
 }
-.process-we-follow h1{
+
+.process-we-follow h1 {
   font-size: 64px;
   font-weight: 700;
   padding-bottom: 12px;
 }
-.process-we-follow h5{
+
+.process-we-follow h5 {
   font-size: 16px;
   font-weight: 600;
   padding-top: 24px;
   padding-bottom: 8px;
 }
-.process-we-follow p{
+
+.process-we-follow p {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   opacity: 0.5;
 }
-.we-promise h1{
+
+.we-promise h1 {
   font-size: 64px;
   font-weight: 700;
 }
-.we-promise button{
+
+.we-promise button {
   background: var(--primary);
   padding: 10px 24px;
   font-weight: 700;
@@ -4067,50 +4104,61 @@ input[type=number] {
   border-radius: 4px;
   margin-top: 52px;
 }
-.Our-most-recent-reviews{
+
+.Our-most-recent-reviews {
   background: linear-gradient(115.34deg, #4B4B4B 24.18%, #000000 97.87%);
   padding-bottom: 140px;
   padding-top: 120px;
 }
-.Our-most-recent-reviews .reviews-box{
+
+.Our-most-recent-reviews .reviews-box {
   background: var(--black);
   border-radius: 16px;
   margin-top: 76px;
 }
-.Our-most-recent-reviews .reviews-box h5{
+
+.Our-most-recent-reviews .reviews-box h5 {
   color: #999897;
 }
-.Our-most-recent-reviews .reviews-popfile{
+
+.Our-most-recent-reviews .reviews-popfile {
   width: 64px;
   height: 64px;
   overflow: hidden;
   flex-shrink: 0;
 }
-.Our-most-recent-reviews .reviews-popfile img{
+
+.Our-most-recent-reviews .reviews-popfile img {
   width: 100%;
   object-fit: contain;
   height: 64px;
 }
 
-.why-mrfix-section{
+.why-mrfix-section {
   background: #EDEDED;
   padding: 100px 0 100px 0;
   margin-top: 150px;
 }
-.why-mrfix-section .service-icon{
-  width:48px;
+
+.why-mrfix-section .service-icon {
+  width: 48px;
   text-align: center;
 }
-.pick-service-location iframe{
+
+.pick-service-location iframe {
   border-radius: 16px;
 }
 
-.pick-service-location .titelTxt{
+.pick-service-location .textalighnSet {
+  min-height: 250px;
+}
+
+.pick-service-location .titelTxt {
   position: relative;
   padding-left: 40px;
 }
 
-.pick-service-location .titelTxt::before{
+.pick-service-location .titelTxt::before {
   content: "";
   width: 16px;
   height: 16px;
@@ -4123,7 +4171,109 @@ input[type=number] {
 
 /* ======================  About Page Home css End =============== */
 
+/* ==================== frame-35 start ===================== */
+.current-openings button {
+  padding: 8px 30px;
+  color: var(--primary);
+  border: 1px solid #FE5104;
+  border-radius: 4px;
+  background: none;
+  font-weight: 400;
+  font-size: 14px;
+}
 
+/* ==================== frame-35 end ===================== */
+
+/* ==================== frame-34 start ===================== */
+.our-brance {
+  background: linear-gradient(115.34deg, #4B4B4B 24.18%, #000000 97.87%);
+
+}
+
+.our-brance button {
+  padding: 8px 16px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--primary);
+  background: none;
+  border-radius: 4px;
+  border: 1px solid var(--primary);
+  margin-top: 50px;
+  transition: all 300ms ease-in-out;
+}
+
+.our-brance button:hover {
+  background: var(--primary);
+  color: var(--white);
+}
+
+/* ==================== frame-34 end ===================== */
+
+/* ==================== Frame-41 Start ===================== */
+.brandsAdds .box {
+  background: linear-gradient(106.13deg, rgba(30, 92, 221, 0.4) 10.11%,
+      rgba(205, 191, 216, 0.43595) 51.45%);
+  border-radius: 16px;
+  padding: 30px;
+  width: 510px;
+}
+
+.brandsAdds .bgAdd2 {
+  background: linear-gradient(134.56deg, #FEC258 14.71%, #F2C1AE 74.81%);
+}
+
+.brandsAdds .bgAdd3 {
+  background: linear-gradient(123.64deg, #D5F0FF 14.46%, #E5FFE4 84.45%);
+}
+
+.brandsAdds .box button {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--white);
+  border-radius: 4px;
+  background: var(--primary);
+  padding: 8px 20px;
+}
+
+.brandsAdds .imgbox {
+  flex-shrink: 0;
+}
+
+.fastShipping{
+  background: #EDEDED;
+  border-radius: 20px;
+  padding: 45px;
+}
+
+.sellAllBrands{
+  background: linear-gradient(110.71deg, rgba(30, 92, 221, 0.4) -10.78%, 
+  rgba(205, 191, 216, 0.43595) 50.74%);
+  padding: 70px 0;
+}
+
+.aboutMrfix_About{
+  background: linear-gradient(242.59deg, #4B4B4B 33.84%, #000000 70.02%);
+  padding: 80px 0;
+}
+
+.aboutMrfix_About button{
+  font-size: 14px;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  border-radius: 4px;
+  padding: 7px 17px;
+  background: transparent;
+}
+
+.aboutMrfix_About .box{
+  background: var(--black);
+  padding: 24px;
+  border-radius: 16px;
+  min-width: 30%;
+}
+
+/* ==================== Frame-41 End ===================== */
 
 
 
@@ -4162,6 +4312,14 @@ input[type=number] {
 
   .sellBanner .desc {
     width: 55%;
+  }
+
+  .brandsAdds .box {
+    width: 33%;
+  }
+
+  .brandsAdds .imgbox {
+    flex-shrink: 1;
   }
 
 }
