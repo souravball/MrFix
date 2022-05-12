@@ -35,11 +35,12 @@ body {
   font-size: 1rem;
   color: var(--black-dark);
   overflow-x: hidden;
+  padding-right: 0 !important;
 }
 
-.modal-open {
-  padding-right: 0px !important;
-}
+/* body.modal-open {
+  padding-right: 0 !important;
+} */
 
 a {
   text-decoration: none;
@@ -57,6 +58,7 @@ a:focus {
 
 a:hover {
   text-decoration: none;
+  color: var(--primary);
 }
 
 h1,
@@ -98,6 +100,7 @@ button:focus {
   text-decoration: none;
   list-style: none;
   outline: none;
+  box-shadow: inherit !important;
 }
 
 /*=============== Dynamic class start ==================*/
@@ -127,6 +130,11 @@ button:focus {
 
 .txt-gren {
   color: var(--gren);
+}
+
+
+.txt-blue {
+  color: #034EA2;
 }
 
 .txt-white {
@@ -213,6 +221,23 @@ button:focus {
   cursor: pointer;
 }
 
+
+.addBorder {
+  position: relative;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.addBorder::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: url(../images/title_border.svg) no-repeat center;
+  width: 100%;
+  height: 1px;
+}
+
 /*=============== Dynamic class End ==================*/
 
 /*=============== Input number filed plugin customize Start ==================*/
@@ -291,7 +316,7 @@ button:focus {
 }
 
 .header .form-control:focus {
-  border-color: #cccbcb;
+  border-color: var(--primary);
   box-shadow: inherit;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -361,6 +386,34 @@ button:focus {
 
 
 .navigation ul li a:hover {
+  color: var(--primary);
+}
+
+.before-login-header ul li a {
+  color: var(--white);
+  font-size: 15px;
+  font-weight: 600;
+  position: relative;
+  margin-left: 40px;
+}
+
+/* .navigation ul li a.active {
+  color: var(--primary);
+} */
+
+.before-login-header ul li a.active::after {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--primary);
+  border-radius: 100%;
+  width: 6px;
+  height: 6px;
+}
+
+.before-login-header ul li a:hover {
   color: var(--primary);
 }
 
@@ -502,6 +555,16 @@ button:focus {
   position: relative;
   padding: 35px 0;
   min-height: 206px;
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+}
+
+.brand .box:hover h2 {
+  font-weight: 600;
+}
+
+.brand .box:nth-child(1):hover path {
+  fill: black;
 }
 
 .brand .box:nth-child(1):before {
@@ -524,6 +587,10 @@ button:focus {
   height: 1px;
 }
 
+.brand .box:nth-child(2):hover path {
+  fill: #034EA2;
+}
+
 .brand .box:nth-child(2):before {
   content: "";
   position: absolute;
@@ -542,6 +609,10 @@ button:focus {
   border-bottom: 1px solid #000;
   width: 100%;
   height: 1px;
+}
+
+.brand .box:nth-child(3):hover path {
+  fill: #CE0E2D;
 }
 
 .brand .box:nth-child(3):before {
@@ -564,6 +635,10 @@ button:focus {
   height: 1px;
 }
 
+.brand .box:nth-child(4):hover path {
+  fill: #F50514;
+}
+
 .brand .box:nth-child(4)::after {
   content: "";
   position: absolute;
@@ -572,6 +647,10 @@ button:focus {
   background: url(../images/brand_border2_right.svg) no-repeat center;
   width: 100%;
   height: 1px;
+}
+
+.brand .box:nth-child(5):hover path {
+  fill: #888B8D;
 }
 
 .brand .box:nth-child(5):before {
@@ -584,6 +663,10 @@ button:focus {
   height: 100%;
 }
 
+.brand .box:nth-child(6):hover path {
+  fill: black;
+}
+
 .brand .box:nth-child(6):before {
   content: "";
   position: absolute;
@@ -594,6 +677,10 @@ button:focus {
   height: 100%;
 }
 
+.brand .box:nth-child(7):hover path {
+  fill: #1C4598;
+}
+
 .brand .box:nth-child(7):before {
   content: "";
   position: absolute;
@@ -602,6 +689,10 @@ button:focus {
   background: url(../images/brand_border_bottom.svg) no-repeat center;
   width: 1px;
   height: 100%;
+}
+
+.brand .box:nth-child(8):hover path {
+  fill: black;
 }
 
 /*=============== Brand End ==================*/
@@ -937,7 +1028,7 @@ button:focus {
   z-index: -1;
 }
 
-.underTab .nav-item:last-child .nav-link{
+.underTab .nav-item:last-child .nav-link {
   margin-right: 0 !important;
 }
 
@@ -945,7 +1036,8 @@ button:focus {
 .underTab .nav-link.active rect {
   stroke: var(--primary);
 }
-.underTab .nav-link.active circle{
+
+.underTab .nav-link.active circle {
   stroke: var(--primary);
   fill: var(--primary);
 }
@@ -1382,6 +1474,10 @@ button[disabled]:hover {
   font-weight: bold;
 }
 
+.add-clour-from {
+  background: linear-gradient(180deg, #FFF1E4 0%, rgba(255, 246, 238, 0) 100%) !important;
+}
+
 /*=============== Get in Touch End ==================*/
 
 /*=============== Footer Start ==================*/
@@ -1463,7 +1559,7 @@ button[disabled]:hover {
   padding: 50px 0 30px;
 }
 
-.sellBanner .container{
+.sellBanner .container {
   position: relative;
 }
 
@@ -1521,6 +1617,25 @@ button[disabled]:hover {
   font-weight: bold;
   padding: 12px 33px;
   margin-top: 25px;
+}
+
+.sellBanner .owl-theme .owl-dots .owl-dot span {
+  width: 8px;
+  height: 2px;
+  border-radius: 0;
+  margin: 0 5px 0 0;
+  transition: all 500ms ease-in-out;
+  display: block;
+}
+
+.sellBanner .owl-theme .owl-dots .owl-dot.active span,
+.sellBanner .owl-theme .owl-dots .owl-dot:hover span {
+  background: var(--primary);
+  width: 36px;
+}
+
+.sellBanner .owl-theme .owl-nav.disabled+.owl-dots {
+  margin-top: 0px;
 }
 
 /*== Sell Banner End ==*/
@@ -1804,7 +1919,7 @@ button[disabled]:hover {
   margin-top: 55px;
 }
 
-.buyBanner .container{
+.buyBanner .container {
   position: relative;
 }
 
@@ -1871,6 +1986,26 @@ button[disabled]:hover {
   border-radius: 10px;
   height: 100%;
 }
+
+.productCategory .form-control {
+  min-width: 245px;
+  min-height: 36px;
+  border-color: #999;
+  font-size: 14px;
+  font-weight: 300;
+  padding-left: 42px;
+  border-radius: 4px;
+}
+
+.productCategory .search_Icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 14px;
+  display: block;
+  line-height: 0;
+}
+
 
 .productCategory ul {
   position: relative;
@@ -1946,8 +2081,36 @@ button[disabled]:hover {
   object-fit: contain;
 }
 
+.laptopImg .img_box {
+  width: 200px;
+  height: 185px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.laptopImg .img_box img {
+  width: 100%;
+  height: 185px;
+  object-fit: contain;
+}
+
 .productBox {
   margin-bottom: 60px;
+  overflow: hidden;
+}
+
+.productBox .text-center{
+  width: 100%; 
+}
+
+.productBox h3{
+  white-space: nowrap; 
+  width: 80%; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  margin: 0 auto;
 }
 
 .productBox h4 {
@@ -2553,6 +2716,10 @@ button[disabled]:hover {
   height: 1px;
 }
 
+.borderHide::after {
+  display: none;
+}
+
 .relatedProducts h2 {
   font-size: 36px;
   font-weight: 600;
@@ -2573,9 +2740,9 @@ button[disabled]:hover {
 
 .relatedProducts .owl-carousel .owl-nav button.owl-prev,
 .relatedProducts .owl-carousel .owl-nav button.owl-next {
-  font-size: 70px;
+  font-size: 50px;
   font-weight: 100;
-  line-height: 33px;
+  line-height: 36px;
   width: 40px;
   height: 40px;
   display: flex;
@@ -2733,7 +2900,6 @@ button[disabled]:hover {
 }
 
 .accesoriesProducrCat ul li.active a path {
-  /* fill: var(--primary);   */
   stroke: var(--primary);
 }
 
@@ -2742,10 +2908,42 @@ button[disabled]:hover {
 }
 
 .accesoriesProducrCat ul li a:hover path {
-  /* fill: var(--primary);   */
   stroke: var(--primary);
 }
 
+.accesoriesProducrCat ul li a:hover circle {
+  stroke: var(--primary);
+}
+
+.accesoriesProducrCat .owl-carousel .owl-stage {
+  display: flex;
+  align-items: flex-end;
+}
+
+.accesoriesProducrCat .owl-carousel .owl-nav button.owl-prev,
+.accesoriesProducrCat .owl-carousel .owl-nav button.owl-next {
+  font-size: 30px;
+  font-weight: 200;
+  line-height: 20px;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  border-radius: 100%;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+}
+
+.accesoriesProducrCat .owl-carousel .owl-nav button.owl-prev {
+  margin-left: -10px;
+}
+
+.accesoriesProducrCat .owl-carousel .owl-nav button.owl-next {
+  right: -10px;
+}
 
 /*== ProducrCat End ==*/
 
@@ -3225,20 +3423,16 @@ input[type=number] {
   cursor: pointer;
 }
 
-.returnModal .addBorder {
-  position: relative;
-  padding-bottom: 30px;
-  margin-bottom: 30px;
-}
-
-.returnModal .addBorder::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background: url(../images/title_border.svg) no-repeat center;
+.fileContainer input[type="file"] {
+  opacity: 0;
+  margin: 0;
+  padding: 0;
   width: 100%;
-  height: 1px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  cursor: pointer;
 }
 
 .returnModal .btnRq {
@@ -3253,32 +3447,833 @@ input[type=number] {
 
 /*=============== My Account End ==================*/
 
+/*=============== Brand__LogoSlider End ==================*/
+.Brand__LogoSlider .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+}
+
+.Brand__LogoSlider .owl-stage {
+  display: flex;
+  align-items: flex-end;
+}
+
+.Brand__LogoSlider .Apple:hover path {
+  fill: black;
+}
+
+.Brand__LogoSlider .Samsung:hover path {
+  fill: #034EA2;
+}
+
+.Brand__LogoSlider .Huawei:hover path {
+  fill: #CE0E2D;
+}
+
+.Brand__LogoSlider .One-Plus:hover path {
+  fill: #F50514;
+}
+
+.Brand__LogoSlider .Google-Pixel:hover path {
+  fill: #737373;
+}
+
+.Brand__LogoSlider .Motorola:hover path {
+  fill: black;
+}
+
+.Brand__LogoSlider .Nokia:hover path {
+  fill: #1C4598;
+}
+
+.Brand__LogoSlider .Sony:hover path {
+  fill: black;
+}
+
+.Brand__LogoSlider .owl-carousel .owl-nav button.owl-prev,
+.Brand__LogoSlider .owl-carousel .owl-nav button.owl-next {
+  font-size: 30px;
+  font-weight: 200;
+  line-height: 20px;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.Brand__LogoSlider .owl-carousel .owl-nav button.owl-prev {
+  margin-left: -10px;
+}
+
+.Brand__LogoSlider .owl-carousel .owl-nav button.owl-next {
+  right: -10px;
+}
+
+.Brand__LogoSlider .box:hover h2 {
+  font-weight: 600;
+}
+
+/*=============== Brand__LogoSlider End ==================*/
+
+/*=============== Unlock Page Start ==================*/
+.unlockPage .boxDesc {
+  background: #F5F5F5;
+  border-radius: 8px;
+  padding: 30px;
+}
+
+.unlockPage .nav-tabs {
+  border: inherit;
+}
+
+.unlockPage .nav-tabs .nav-link {
+  background: transparent;
+  border-color: transparent;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: var(--black-dark);
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.unlockPage .nav-tabs .nav-item:last-child .nav-link {
+  margin-bottom: 0;
+}
+
+.unlockPage .nav-tabs .nav-link.active {
+  color: var(--primary);
+}
+
+.unlockPage .nav-tabs .nav-link.active path {
+  stroke: var(--primary);
+}
+
+.unlockPage .nav-tabs .nav-link:hover path {
+  stroke: var(--primary);
+}
+
+.unlockPage .nav-tabs .nav-link:hover {
+  color: var(--primary);
+}
+
+.unlockPage .boxDevice {
+  display: flex;
+  align-items: center;
+  border: 1px solid #c3c1c1;
+  border-radius: 12px;
+  padding: 20px 25px;
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.unlockPage .boxDevice:hover {
+  border-color: var(--primary);
+}
+
+.unlockPage .boxDevice .imgBlock {
+  width: 55px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-right: 30px;
+}
+
+.unlockPage .boxDevice .imgBlock img {
+  height: 75px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.unlockPage .boxDevice h2 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.unlockPage .active {
+  border-color: var(--primary);
+}
+
+.unlockPage .boxDevice.active h2 {
+  font-weight: 600;
+}
+
+.unlockPage .boxDesc input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.unlockPage .boxDesc .checkBox {
+  font-size: 14px;
+  margin-bottom: 0;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.unlockPage .boxDesc label:before {
+  content: '';
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 2px solid #ced4da;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 5%), inset 0px -15px 10px -12px rgb(0 0 0 / 5%);
+  padding: 9px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 3px;
+}
+
+.unlockPage .boxDesc input:checked+label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 8px;
+  width: 6px;
+  height: 10px;
+  border: solid var(--primary);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.unlockPage .ProceedTo {
+  border-radius: 4px;
+  background: var(--primary);
+  font-size: 18px;
+  color: var(--white);
+  font-weight: bold;
+  padding: 12px 5px;
+  width: 100%;
+  text-align: center;
+}
+
+.unlockPage .setIcon {
+  border: 1px solid #ced4da;
+  width: 55px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  margin-bottom: 6px;
+  cursor: pointer;
+  transition: 400ms all ease-in-out;
+}
+
+.unlockPage .setIcon.active {
+  border-color: var(--primary);
+}
+
+.unlockPage .setIcon:hover {
+  border-color: var(--primary);
+}
+
+.unlockPage .form-control {
+  height: 44px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.unlockPage .form-control:focus {
+  box-shadow: inherit;
+  border-color: var(--primary);
+}
 
 
+.unlockPage .smallInput {
+  width: 44px;
+  background: #F5F5F5;
+}
 
+.unlockPage textarea {
+  resize: none;
+  min-height: 149px;
+}
 
+.unlockPage .table thead {
+  border-color: inherit;
+  border-style: hidden;
+  border-width: 0;
+  position: relative;
+  background: #F5F5F5;
+  padding: 0 30px;
+}
 
+.unlockPage .table tbody {
+  border-color: inherit;
+  border-style: hidden;
+  border-width: 0;
+}
 
+.unlockPage .table tbody td {
+  padding: 20px 8px;
+}
 
+/*=============== Unlock Page End ==================*/
 
+/*=============== Deals page Start ==================*/
+.dealsPage .offerSec .desc {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 50px;
+}
 
+.dealsPage .offerSec .desc h2 {
+  font-size: 64px;
+  font-weight: 700;
+}
 
+.dealsPage .productBox {
+  margin-bottom: 0px;
+}
 
+.dealsPage .discountBox {
+  position: absolute;
+  top: 3%;
+  left: 3%;
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  overflow: hidden;
+  text-align: center;
+  background: linear-gradient(136.09deg, #FF8C46 17.73%, #F85D5F 89.71%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.dealsPage .discountBox h2 {
+  font-size: 14px;
+  color: var(--white);
+  font-weight: 600;
+  line-height: 16px;
+}
 
+/*=============== Deals page End ==================*/
 
+/*=============== Repair-statusPage Start ==================*/
+.repair-statusPage {
+  background: #F5F5F5;
+  border-radius: 20px;
+  padding: 30px;
+}
 
+.repair-statusPage .rtBox {
+  border: 1px solid #858585;
+  width: 400px;
+  border-radius: 8px;
+  background: #DDDDDD;
+  overflow: hidden;
+}
 
+.repair-statusPage .rtBox p {
+  border-bottom: 1px solid #858585;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 12px;
+}
 
+.repair-statusPage .rtBox p span {
+  background: var(--white);
+  width: 110px;
+  padding: 8px 12px;
+  font-weight: 600;
+  min-height: 38px;
+}
 
+.repair-statusPage .table-responsive {
+  border: 1px solid #858585;
+  border-radius: 8px;
+}
 
+.repair-statusPage .table {
+  margin-bottom: 0;
+}
 
+.repair-statusPage .table thead {
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+}
 
+.repair-statusPage .table tbody {
+  border-color: #858585;
+  border-style: solid;
+  border: inherit;
+  border-bottom: transparent;
+  font-size: 16px;
+}
 
+.repair-statusPage .table tbody .prog {
+  background: #1CA0F2;
+  border-radius: 4px;
+  color: var(--white);
+  text-transform: uppercase;
+  padding: 5px 9px;
+  font-weight: bold;
+}
 
+.repair-statusPage .table thead td {
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
+.repair-statusPage .table tbody td {
+  padding: 20px;
+}
 
+/*=============== Repair-statusPage End ==================*/
 
+/*=============== Track My Order Page Start ==================*/
+.trackMyOrder .orderDits {
+  background: #F5F5F5;
+  border-radius: 8px;
+  padding: 13px 20px;
+}
+
+.trackMyOrder .invoice {
+  border: inherit;
+  font-weight: 600;
+  color: var(--primary);
+  font-size: 18px;
+  background: transparent;
+}
+
+.trackMyOrder .imgDit {
+  width: 122px;
+  height: 122px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trackMyOrder .imgDit img {
+  width: 100%;
+  height: 122px;
+  object-fit: contain;
+}
+
+.trackMyOrder .progressBarItem {
+  margin-right: 70px;
+}
+
+.trackMyOrder .progressBarItem span {
+  border-radius: 100%;
+  width: 24px;
+  height: 24px;
+  border: 1px solid var(--primary);
+  position: relative;
+  z-index: 1;
+  background: var(--white);
+}
+
+.trackMyOrder .progressBarItem span::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -160px;
+  transform: translateY(-50%);
+  width: 150px;
+  height: 1px;
+  border-top: 1px dotted var(--primary);
+  z-index: -1;
+}
+
+.trackMyOrder .progressBarItem span::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 8px;
+  width: 6px;
+  height: 10px;
+  border: solid var(--white);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.trackMyOrder .progressBarItem.barHide span::before {
+  display: none;
+}
+
+.trackMyOrder .progressBarItem.active span {
+  background: var(--primary);
+}
+
+.trackMyOrder .progressBarItem.active span::before {
+  border-top: 1px solid var(--primary);
+}
+
+.trackMyOrder .progressBarItem.active h2 {
+  font-weight: 600;
+}
+
+.trackMyOrder .progressBarItem.active h3 {
+  font-weight: 600;
+}
+
+/*=============== Track My Order Page End ==================*/
+
+/* ====================== login-modal- css start =============== */
+.loginModal .modal-dialog-centered {
+  max-width: 755px;
+  border-radius: 8px;
+}
+
+.loginModal .form-control {
+  min-height: 44px;
+  outline: none;
+  border: 1px solid #adadad;
+  border-radius: 4px;
+}
+
+.loginModal .form-control:focus {
+  box-shadow: inherit;
+  border-color: var(--primary);
+}
+
+.loginModal .btnLogin {
+  display: inline-block;
+  border-radius: 4px;
+  background: var(--primary);
+  font-size: 18px;
+  color: var(--white);
+  font-weight: bold;
+  padding: 12px 40px;
+}
+
+.loginModal .login-google-btn {
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  background: var(--primary);
+  font-size: 18px;
+  color: var(--white);
+  font-weight: 600;
+  padding: 9px 20px;
+  width: 100%;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.loginModal .fbbg {
+  background: #1877F2;
+  margin-top: 60px;
+}
+
+.loginModal .adLeft_border {
+  position: relative;
+  margin-left: 45px;
+  padding-left: 45px;
+}
+
+.loginModal .adLeft_border::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 25%;
+  border-left: 1px solid #e5e2e2;
+  height: 120px;
+  width: 1px;
+}
+
+.loginModal .adLeft_border::after {
+  content: "OR";
+  position: absolute;
+  left: -18px;
+  top: 49%;
+  border: 1px solid #e5e2e2;
+  height: 36px;
+  width: 36px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--white);
+}
+
+.registerModal .modal-dialog-centered {
+  max-width: 680px;
+}
+
+.loginModal .footerBtn {
+  position: relative;
+  margin-top: 50px;
+  padding-top: 50px;
+}
+
+.loginModal .footerBtn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  border-top: 1px solid #e5e2e2;
+  height: 1px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.loginModal .footerBtn::after {
+  content: "OR";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -20%;
+  border: 1px solid #e5e2e2;
+  height: 36px;
+  width: 36px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--white);
+  margin: 0 auto;
+}
+
+.forgotPasswordModal .modal-dialog-centered {
+  max-width: 430px;
+}
+
+/* ====================== login-modal- css End =============== */
+
+/* ====================== About Page Home css Start =============== */
+.aboutHomePage {
+  margin: 120px 0;
+}
+
+.aboutHomePage h2 {
+  font-size: 64px;
+}
+
+.process-we-follow h1 {
+  font-size: 64px;
+  font-weight: 700;
+  padding-bottom: 12px;
+}
+
+.process-we-follow h5 {
+  font-size: 16px;
+  font-weight: 600;
+  padding-top: 24px;
+  padding-bottom: 8px;
+}
+
+.process-we-follow p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  opacity: 0.5;
+}
+
+.we-promise h1 {
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.we-promise button {
+  background: var(--primary);
+  padding: 10px 24px;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--white);
+  border-radius: 4px;
+  margin-top: 52px;
+}
+
+.Our-most-recent-reviews {
+  background: linear-gradient(115.34deg, #4B4B4B 24.18%, #000000 97.87%);
+  padding-bottom: 140px;
+  padding-top: 120px;
+}
+
+.Our-most-recent-reviews .reviews-box {
+  background: var(--black);
+  border-radius: 16px;
+  margin-top: 76px;
+}
+
+.Our-most-recent-reviews .reviews-box h5 {
+  color: #999897;
+}
+
+.Our-most-recent-reviews .reviews-popfile {
+  width: 64px;
+  height: 64px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.Our-most-recent-reviews .reviews-popfile img {
+  width: 100%;
+  object-fit: contain;
+  height: 64px;
+}
+
+.why-mrfix-section {
+  background: #EDEDED;
+  padding: 100px 0 100px 0;
+  margin-top: 150px;
+}
+
+.why-mrfix-section .service-icon {
+  width: 48px;
+  text-align: center;
+}
+
+.pick-service-location iframe {
+  border-radius: 16px;
+}
+
+.pick-service-location .textalighnSet {
+  min-height: 250px;
+}
+
+.pick-service-location .titelTxt {
+  position: relative;
+  padding-left: 40px;
+}
+
+.pick-service-location .titelTxt::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  background: var(--primary);
+  position: absolute;
+  top: 9px;
+  left: 0;
+}
+
+/* ======================  About Page Home css End =============== */
+
+/* ==================== frame-35 start ===================== */
+.current-openings button {
+  padding: 8px 30px;
+  color: var(--primary);
+  border: 1px solid #FE5104;
+  border-radius: 4px;
+  background: none;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/* ==================== frame-35 end ===================== */
+
+/* ==================== frame-34 start ===================== */
+.our-brance {
+  background: linear-gradient(115.34deg, #4B4B4B 24.18%, #000000 97.87%);
+
+}
+
+.our-brance button {
+  padding: 8px 16px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--primary);
+  background: none;
+  border-radius: 4px;
+  border: 1px solid var(--primary);
+  margin-top: 50px;
+  transition: all 300ms ease-in-out;
+}
+
+.our-brance button:hover {
+  background: var(--primary);
+  color: var(--white);
+}
+
+/* ==================== frame-34 end ===================== */
+
+/* ==================== Frame-41 Start ===================== */
+.brandsAdds .box {
+  background: linear-gradient(106.13deg, rgba(30, 92, 221, 0.4) 10.11%,
+      rgba(205, 191, 216, 0.43595) 51.45%);
+  border-radius: 16px;
+  padding: 30px;
+  width: 510px;
+}
+
+.brandsAdds .bgAdd2 {
+  background: linear-gradient(134.56deg, #FEC258 14.71%, #F2C1AE 74.81%);
+}
+
+.brandsAdds .bgAdd3 {
+  background: linear-gradient(123.64deg, #D5F0FF 14.46%, #E5FFE4 84.45%);
+}
+
+.brandsAdds .box button {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--white);
+  border-radius: 4px;
+  background: var(--primary);
+  padding: 8px 20px;
+}
+
+.brandsAdds .imgbox {
+  flex-shrink: 0;
+}
+
+.fastShipping{
+  background: #EDEDED;
+  border-radius: 20px;
+  padding: 45px;
+}
+
+.sellAllBrands{
+  background: linear-gradient(110.71deg, rgba(30, 92, 221, 0.4) -10.78%, 
+  rgba(205, 191, 216, 0.43595) 50.74%);
+  padding: 70px 0;
+}
+
+.aboutMrfix_About{
+  background: linear-gradient(242.59deg, #4B4B4B 33.84%, #000000 70.02%);
+  padding: 80px 0;
+}
+
+.aboutMrfix_About button{
+  font-size: 14px;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  border-radius: 4px;
+  padding: 7px 17px;
+  background: transparent;
+}
+
+.aboutMrfix_About .box{
+  background: var(--black);
+  padding: 24px;
+  border-radius: 16px;
+  min-width: 30%;
+}
+
+/* ==================== Frame-41 End ===================== */
 
 
 
@@ -3319,6 +4314,14 @@ input[type=number] {
     width: 55%;
   }
 
+  .brandsAdds .box {
+    width: 33%;
+  }
+
+  .brandsAdds .imgbox {
+    flex-shrink: 1;
+  }
+
 }
 
 @media(max-width:1440px) {
@@ -3341,7 +4344,17 @@ input[type=number] {
   }
 }
 
-@media(max-width:1280px) {}
+@media(max-width:1280px) {
+
+  .trackMyOrder .itemDitsBar {
+    justify-content: center !important;
+    margin: 70px 0 !important;
+  }
+
+  .trackMyOrder .rtSideBar {
+    margin-top: 50px;
+  }
+}
 
 @media(max-width:1200px) {}
 
