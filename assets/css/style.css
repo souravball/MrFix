@@ -3425,10 +3425,130 @@ input[type=number] {
   font-size: 14px;
 }
 
-.returnModal .form-control:focus {
-  box-shadow: inherit;
-  border-color: #ced4da;
+.returnModal textarea.frame35 {
+  min-height: 80px;
 }
+
+.returnModal .frame35Opt .select2-selection {
+  border-color: #333 !important;
+}
+
+.returnModal input[type=file].fileChoose::-ms-browse {
+  border: 1px solid var(--primary);
+  border-radius: 3px;
+  padding: 9px 22px;
+  background-color: transparent;
+  transition: 1s;
+  color: var(--primary);
+  font-size: 14px;
+}
+
+.returnModal input[type=file].fileChoose::-webkit-file-upload-button {
+  border: 1px solid var(--primary);
+  border-radius: 3px;
+  padding: 9px 22px;
+  background-color: transparent;
+  transition: 1s;
+  color: var(--primary);
+  font-size: 14px;
+}
+
+.returnModal input[type=file].fileChoose::file-selector-button {
+  border: 1px solid var(--primary);
+  border-radius: 3px;
+  padding: 9px 22px;
+  background-color: transparent;
+  transition: 1s;
+  color: var(--primary);
+  font-size: 14px;
+}
+
+.returnModal input[type=file].fileChoose::-ms-browse:hover {
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+  color: var(--white);
+}
+
+.returnModal input[type=file].fileChoose::-webkit-file-upload-button:hover {
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+  color: var(--white);
+}
+
+.returnModal input[type=file].fileChoose::file-selector-button:hover {
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+  color: var(--white);
+}
+
+.returnModal .replaceSelect {
+  border: 1px solid #333;
+  border-radius: 3px;
+  width: 180px;
+  overflow: hidden;
+}
+
+.returnModal .replaceSelect input.radio:empty {
+  margin-left: -999px;
+  display: none;
+}
+
+.returnModal .replaceSelect input.radio:empty~label {
+  position: relative;
+  display: flex;
+  text-indent: 2.30em;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 14px;
+  color: var(--black-dark);
+  padding: 6px 0;
+}
+
+.returnModal .replaceSelect .border-rightAdd{
+  border-right: 1px solid #000;
+}
+
+.returnModal .replaceSelect input.radio:empty~label:before {
+  position: absolute;
+  display: block;
+  top: 6px;
+  bottom: 0;
+  left: 0;
+  content: '';
+}
+
+.returnModal .replaceSelect input.radio:hover:not(:checked)~label:before {
+  content: '\2714';
+  text-indent: .8em;
+  color: var(--primary);
+}
+
+.returnModal .replaceSelect input.radio:hover:not(:checked)~label {
+  color: var(--primary);
+}
+
+.returnModal .replaceSelect input.radio:checked~label:before {
+  content: '\2714';
+  text-indent: .8em;
+  color: var(--primary);
+}
+
+.returnModal .replaceSelect input.radio:checked ~ label {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.returnModal .form-control {
+  height: 42px;
+  font-size: 14px;
+  font-weight: 300;
+  border-color: #333;
+  font-weight: 400;
+}
+
 
 .returnModal .uploadImg {
   width: 57px;
@@ -4460,11 +4580,11 @@ input[type=number] {
     font-weight: 600;
   }
 
-  .mobi_navigation ul li{
+  .mobi_navigation ul li {
     margin-bottom: 20px;
   }
 
-  .mobi_navigation ul li:last-child{
+  .mobi_navigation ul li:last-child {
     margin-bottom: 0px;
   }
 
