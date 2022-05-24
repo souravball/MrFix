@@ -400,6 +400,14 @@ button:focus {
   margin-left: 40px;
 }
 
+.mobileMenuHdr {
+  display: none;
+}
+
+.m-versionMenu {
+  display: none;
+}
+
 /* .navigation ul li a.active {
   color: var(--primary);
 } */
@@ -418,6 +426,59 @@ button:focus {
 
 .before-login-header ul li a:hover {
   color: var(--primary);
+}
+
+.before-login-header .openSecbar {
+  position: absolute;
+  width: 80%;
+  top: -100%;
+  right: 0;
+  height: 100%;
+  background: var(--black);
+  transition: all 400ms ease-in-out;
+}
+
+.before-login-header .openSecbar .form-control {
+  background: #353535;
+  border: 1px solid #585858;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #ffffff8a;
+  font-weight: 300;
+  min-height: 42px;
+  min-width: 700px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.before-login-header .openSecbar .form-control:focus {
+  border-color: var(--primary);
+  box-shadow: inherit;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.before-login-header .openSecbar .form-control::-webkit-input-placeholder {
+  color: #ffffff8a;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.before-login-header .openSecbar .form-control:-ms-input-placeholder {
+  color: #ffffff8a;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.before-login-header .openSecbar .form-control::placeholder {
+  color: #ffffff8a;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .menuSideBar {
@@ -3507,7 +3568,7 @@ input[type=number] {
   padding: 6px 0;
 }
 
-.returnModal .replaceSelect .border-rightAdd{
+.returnModal .replaceSelect .border-rightAdd {
   border-right: 1px solid #000;
 }
 
@@ -3536,7 +3597,7 @@ input[type=number] {
   color: var(--primary);
 }
 
-.returnModal .replaceSelect input.radio:checked ~ label {
+.returnModal .replaceSelect input.radio:checked~label {
   color: var(--primary);
   font-weight: 600;
 }
@@ -4608,15 +4669,131 @@ input[type=number] {
     height: 6px;
   }
 
+  .banner {
+    margin-top: 15px;
+  }
+
+  .banner .container {
+    padding: 0;
+  }
+
+  .banner .desc {
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .banner h1 {
+    font-size: 40px;
+    line-height: 60px;
+    padding-top: 20px;
+  }
+
+  .banner .text {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .banner a {
+    margin-top: 25px;
+    font-size: 14px;
+    padding: 10px 30px;
+  }
+
 }
 
-@media(max-width:1024px) {}
+@media(max-width:1024px) {
+  .mobileMenuHdr {
+    display: block;
+  }
+
+  .before-login-header .mobiUL {
+    display: none !important;
+  }
+
+  .m-versionMenu {
+    display: block;
+    position: fixed;
+    right: -100%;
+    top: 0;
+    width: 400px;
+    height: 100%;
+    background: var(--black);
+    padding: 20px 30px;
+    transition: all 500ms ease-in-out;
+  }
+
+  .m-versionMenu .form-control {
+    background: #353535;
+    border: 1px solid #585858;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #ffffff8a;
+    font-weight: 300;
+    height: 36px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .m-versionMenu .form-control:focus {
+    border-color: var(--primary);
+    box-shadow: inherit;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .m-versionMenu ul li a {
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 20px;
+    display: block;
+  }
+
+
+}
 
 @media(max-width:991px) {}
 
-@media(max-width:801px) {}
+@media(max-width:801px) {
+  .banner h1 {
+    font-size: 30px;
+    line-height: 40px;
+    padding-top: 20px;
+  }
 
-@media(max-width:767px) {}
+  .banner .text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .brand .box::after {
+    display: none;
+  }
+
+  .brand .box::before {
+    display: none;
+  }
+
+}
+
+@media(max-width:767px) {
+  .repair .box {
+    width: 100%;
+  }
+
+  .brand .container {
+    justify-content: space-evenly;
+  }
+
+  .brand .box {
+    width: auto;
+    padding: 0 40px 20px 0;
+    min-height: 120px;
+  }
+}
 
 @media(max-width:600px) {}
 
