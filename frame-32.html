@@ -84,16 +84,17 @@
     <!-- Header End -->
 
     <!-- Login Before Header Start -->
-    <header class="before-login-header ">
+    <header class="before-login-header">
         <div class="text-center bg-primary text-white py-2">
             <p>Spring Sale | March 15th - March 31st. Shop Now</p>
         </div>
-        <div class="bg-black py-3">
+        <div class="bg-black py-lg-3 py-2 position-relative overflow-hidden">
             <div class="container d-flex justify-content-between align-items-center">
                 <div>
                     <a href="index.html"><img src="assets/images/logo.svg" alt="Logo"></a>
                 </div>
-                <ul class="d-flex">
+               
+                <ul class="d-flex mobiUL">
                     <li><a href="#">Repairs</a></li>
                     <li><a href="#">Spare Parts</a></li>
                     <li><a href="#">Unlock</a></li>
@@ -102,19 +103,59 @@
                     <li><a href="#">Buy</a></li>
                     <li><a href="#">Sell</a></li>
                 </ul>
-                <div>
-                    <button class="bg-transparent"><img src="assets/images/search.svg"></button>
+                <div class="mobiUL">
+                    <button class="bg-transparent" id="secBar"><img src="assets/images/search.svg"></button>
                     <button class="bg-transparent mx-4" data-bs-toggle="modal" data-bs-target="#exampleModalToggle"
                         role="button">
                         <img src="assets/images/account_icon.svg">
                     </button>
                     <button class="bg-transparent"><img src="assets/images/cart_icon.svg"></button>
-
                 </div>
+
+                <div class="openSecbar d-flex align-items-center justify-content-between">
+                    <input type="text" class="form-control" placeholder="Search Apple iPhone, Samsung Galaxy, Screens, Battery, Cable, Headphones, Car Mount, Cases...">
+                    <span class="line-height-0 mx-4 cursor-pointer" id="closeSecBar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff" class="bi bi-x-lg" viewBox="0 0 16 16">
+                            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                        </svg>
+                    </span>
+                </div>
+
+                
+
+                <button class="bg-transparent" id="mobileMenuHdr">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="#dedede" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
+                    </svg>
+                </button>
             </div>
         </div>
 
     </header>
+    <div class="m-versionMenu">
+        <span class="line-height-0 mb-3 d-block cursor-pointer text-end" id="m-versionSidebar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fe5104" class="bi bi-x-lg" viewBox="0 0 16 16">
+                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"></path>
+            </svg>
+        </span>
+        <div class="d-flex align-items-center justify-content-between mb-4">
+            <input type="text" class="form-control" placeholder="Search Apple iPhone, Samsung Galaxy, Screens, Battery, Cable, Headphones, Car Mount, Cases...">
+            <button class="bg-transparent mx-3 flex-shrink-0" data-bs-toggle="modal" data-bs-target="#exampleModalToggle"
+                role="button">
+                <img src="assets/images/account_icon.svg">
+            </button>
+            <button class="bg-transparent flex-shrink-0"><img src="assets/images/cart_icon.svg"></button>
+        </div>
+        <ul class="">
+            <li><a href="#">Repairs</a></li>
+            <li><a href="#">Spare Parts</a></li>
+            <li><a href="#">Unlock</a></li>
+            <li><a href="#">Deals</a></li>
+            <li><a href="#">Accesories</a></li>
+            <li><a href="#">Buy</a></li>
+            <li><a href="#">Sell</a></li>
+        </ul>
+    </div>
     <!-- Login Before Header End -->
 
     <!-- About Page Home Start -->
@@ -1172,6 +1213,22 @@
                 }
             }
         });
+
+        $("#secBar").click(function(){
+            $(".openSecbar").css("top", "0%");
+        });
+        $("#closeSecBar").click(function(){
+            $(".openSecbar").css("top", "-100%");
+        });
+
+        $("#mobileMenuHdr").click(function () {
+			$(".m-versionMenu").css("right", "0%");
+			$('html').css("overflow", "hidden");
+		});
+        $("#m-versionSidebar").click(function () {
+			$(".m-versionMenu").css("right", "-100%");
+			$('html').css("overflow", "initial");
+		});
     </script>
 </body>
 
