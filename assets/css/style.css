@@ -905,7 +905,7 @@ button:focus {
   background: transparent;
   border: 1px solid #bcb7b7;
   border-radius: 12px;
-  padding: 4px 0 4px 20px;
+  padding: 4px 4px 4px 20px;
   width: 100%;
   font-size: 18px;
   color: var(--black-dark);
@@ -979,7 +979,7 @@ button:focus {
 }
 
 .BoxPrice {
-  width: 50%;
+  width: 48%;
   padding: 20px 0;
 }
 
@@ -1006,8 +1006,8 @@ button:focus {
 
 .servicePrice .rt_Box {
   position: relative;
-  padding-left: 50px;
-  margin-left: 50px;
+  padding-left: 30px;
+  margin-left: 30px;
 }
 
 .servicePrice .rt_Box::after {
@@ -1311,7 +1311,7 @@ button:focus {
   border: 1px solid #bcb7b7;
   border-radius: 6px;
   padding: 4px 0 4px 20px;
-  width: 100%;
+  width: 190px;
   font-size: 16px;
   color: var(--black-dark);
   transition: all 200ms ease-in-out;
@@ -4500,6 +4500,10 @@ input[type=number] {
 @media(max-width:1680px) {}
 
 @media(max-width:1600px) {
+  .BoxPrice {
+    width: 47%;
+  }
+
   .container {
     max-width: 100%;
   }
@@ -4699,6 +4703,19 @@ input[type=number] {
     padding: 10px 30px;
   }
 
+  .openDetilsBlock {
+    width: 100%;
+    overflow-y: auto;
+  }
+
+  .walkModal {
+    overflow-y: auto;
+  }
+
+  .about .imgPosition {
+    bottom: 0px;
+  }
+
 }
 
 @media(max-width:1024px) {
@@ -4752,10 +4769,64 @@ input[type=number] {
     display: block;
   }
 
+  .about {
+    padding: 50px 0;
+    position: relative;
+  }
+
+  .about .imgPosition {
+    position: inherit;
+    left: 0;
+    margin-right: 15px;
+  }
+
+  .about .col-lg-7 {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .Get-in-Touch {
+    padding: 50px 0;
+  }
+
+  .Get-in-Touch .contactInfo{
+    border: inherit;
+    width: 50%;
+  }
 
 }
 
-@media(max-width:991px) {}
+@media(max-width:991px) {
+  .bookingService h6 {
+    margin-bottom: 20px;
+  }
+
+  .WhyChoose{
+    padding: 30px 0 0;
+  }
+
+  .WhyChoose .addBottommBorder {
+    flex-wrap: wrap;
+  }
+  .WhyChoose .addBottommBorder::before {
+    display: none;
+  }
+
+  .WhyChoose .boxColum{
+    width: 100%;
+    padding: 0;
+    margin-left: 0;
+    margin-bottom: 50px;
+  }
+
+  .WhyChoose .addRightBorder::after {
+    display: none;
+  }
+
+  .WhyChoose .m-view_brek{
+    flex-wrap: wrap;
+  }
+}
 
 @media(max-width:801px) {
   .banner h1 {
@@ -4777,6 +4848,31 @@ input[type=number] {
     display: none;
   }
 
+  .selectPhone {
+    margin-top: 30px;
+  }
+
+  .titleBlock h4 {
+    font-size: 22px;
+  }
+
+  .mobileShowBlock {
+    margin-top: 30px;
+  }
+
+  .mobileShowBlock .box {
+    width: 33%;
+  }
+
+  .underTab .nav-item {
+    width: 33%;
+  }
+
+  .underTab .nav-link {
+    width: 100%;
+    margin-right: 0 !important;
+  }
+
 }
 
 @media(max-width:767px) {
@@ -4793,13 +4889,113 @@ input[type=number] {
     padding: 0 40px 20px 0;
     min-height: 120px;
   }
+
+  .servicePrice h6 {
+    font-size: 40px;
+  }
+
+  .selectService .mobi_topCat {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+
+  .selectService .mobileBrekUi {
+    margin-top: 15px;
+    flex-direction: column;
+    align-items: flex-start !important;
+    margin-left: 0 !important;
+  }
+
+  .selectService .mobileBrekUi .addBorderLeft {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+    margin-top: 15px;
+  }
+
+  .selectService .mobileBrekUi .addBorderLeft::before {
+    display: none;
+  }
+
+
+
 }
 
-@media(max-width:600px) {}
+@media(max-width:600px) {
+  .mobileShowBlock .box {
+    width: 50%;
+  }
 
-@media(max-width:575px) {}
+  .BoxPrice {
+    width: 100%;
+  }
 
-@media(max-width:480px) {}
+  .BoxPrice {
+    width: 100%;
+  }
+
+  .servicePrice .rt_Box {
+    padding-left: 0px;
+    margin-left: 0px;
+  }
+
+  .servicePrice .rt_Box::after {
+    display: none;
+  }
+
+  .underTab .nav-item {
+    width: 50%;
+  }
+
+  .Get-in-Touch .contact_Form{
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .footer .rt_media_block{
+    width: 100%;
+  }
+
+  .footer .rt_media_block svg{
+    width: 25px;
+  }
+
+  .footer .fotterLinkSection h2{
+    font-size: 20px;
+  }
+
+  .footer .fotterLinkSection ul li a{
+    font-size: 14px;
+  }
+}
+
+@media(max-width:575px) {
+  .titleBlock h4 {
+    margin-bottom: 10px;
+  }
+
+  .titleBlock .form-control {
+    min-width: 100%;
+  }
+
+  .ourService h6 {
+    font-size: 24px;
+  }
+}
+
+@media(max-width:480px) {
+  .brand .box {
+    width: 50%;
+  }
+
+  .underTab .nav-item {
+    width: 100%;
+  }
+
+  .footer .rt_media_block{
+    justify-content: space-between;
+  }
+
+}
 
 @media(max-width:420px) {}
 
