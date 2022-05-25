@@ -403,6 +403,9 @@ button:focus {
 .mobileMenuHdr {
   display: none;
 }
+#mobileMenuHdr{
+  display: none;
+}
 
 .m-versionMenu {
   display: none;
@@ -4703,6 +4706,10 @@ input[type=number] {
 
 @media(max-width:1024px) {
   .mobileMenuHdr {
+    display: block;
+  }
+
+  #mobileMenuHdr{
     display: block;
   }
 
