@@ -4719,6 +4719,31 @@ input[type=number] {
     bottom: 0px;
   }
 
+
+  =============== RESPONSIV RAJ =======================
+/accesories / raj/
+
+/buy / raj/
+.productBox h5 { font-size: 30px;}
+  
+/buy_product / raj/
+.yourSelectProduct .boxAddcart h2 {font-size: 40px; }
+.yourSelectProduct .boxAddcart img{}
+.yourSelectProduct .boxAddcart img { width: 75%; float: right; }
+.yourSelectProduct .tab-content .Warranty-h2 { font-size: 25px;}
+.yourSelectProduct .tab-content p{ font-size: 15px; }
+.yourSelectProduct .tab-content .Warranty-ul li { font-size: 13px; font-weight: normal; margin-bottom: 8px; list-style: auto; font-style: italic; color: #000; }
+.yourSelectProduct .tab-content h3{ font-size: 15px; }
+.yourSelectProduct .tab-content h3 span{ font-size: 15px; }
+.yourSelectProduct .tab-content p { font-size: 13px; line-height: 20px; margin: 0 !important; }
+.FrequentlyBought h2 { font-size: 30px; font-weight: 600; margin-bottom: 40px; }
+.productBox h4 { font-size: 18px; font-weight: 600; margin: 8px 0; }
+.MYaccount_page .table td h2{ font-size: 14px; }
+.MYaccount_page h2 { font-size: 15px; }
+
+
+
+
 }
 
 @media(max-width:1024px) {
@@ -4801,6 +4826,75 @@ input[type=number] {
     width: 50%;
   }
 
+
+
+.titleBlock h4 { font-size: 30px;}
+.accesoriesProducrCat li { margin-right: 70px; margin-bottom: 30px; }
+
+.productBox h4 { font-size: 18px;} 
+
+.yourSelectProduct .lt-Side h2 { font-size: 27px; font-weight: 600; margin-bottom: 20px; }
+.yourSelectProduct .boxAddcart h2 { font-size: 30px; }
+.yourSelectProduct .boxAddcart h3 { font-size: 15px; margin-bottom: 20px; }
+.yourSelectProduct  .boxAddcart h4{ font-size: 12px; }
+.yourSelectProduct .boxAddcart img { width: 70%; float: right; margin: 0 -10px 0 0; }
+.yourSelectProduct a{font-size: 12px;}
+.yourSelectProduct .nav-tabs .nav-link{ font-size: 15px; padding: 7px 15px; }
+.yourSelectProduct .tab-content p { font-size: 12px; line-height: 20px; margin: 9px 0 !important; }
+.yourSelectProduct .tab-content h3 span { font-size: 12px; }
+.yourSelectProduct .tab-content h2 { font-size: 20px; font-weight: 600; margin-bottom: 20px; color: #a4a4a4c4; }
+.yourSelectProduct .tab-content .reviewBtn{padding: 10px 50px;}
+.yourSelectProduct .tab-content .Warranty-h2 { font-size: 20px; }
+ul.d-flex li span svg{ width: 20px; }
+.discoverBlock h2{ font-size: 20px; }
+.FrequentlyBought h2 { font-size: 25px;}
+.FrequentlyBought .addCartbtn{ font-size: 15px; color: var(--white); font-weight: bold; padding: 8px 25px;  }
+.productBox h4 { font-size: 15px; }
+.productBox h3 { white-space: nowrap; width: 100%; overflow: hidden; text-overflow: ellipsis; margin: 0 auto; font-size: 15px; }
+.yourSelectProduct .cartBtn { font-weight: bold; font-size: 15px;}
+.yourSelectProduct .wiseListBtn { font-weight: bold; font-size: 15px;}
+.relatedProducts h2 { font-size: 25px; font-weight: 600; margin-bottom: 30px; }
+
+.sellBanner { padding: 10px 0 30px; }
+.sellBanner h2 { font-size: 45px; font-weight: bold; line-height: 65px; margin-bottom: 20px;}
+.sellBanner .secBtn { border-radius: 4px; background: var(--primary); font-size: 15px; color: var(--white); font-weight: bold; padding: 10px 30px; margin-top: 20px; }
+.brandMobile .box { border-radius: 20px;  padding: 5px 10px; }
+.brandMobile .ImgBlock { width: 220px; height: 200px; overflow: hidden; margin-bottom: 20px;}
+.brandMobile .box h3{ font-size: 15px; }
+.select_Brand_Phone .box button { background: transparent; border: 1px solid #c5c5c585; font-size: 11px; border-radius: 4px; padding: 10px; transition: all 300ms ease-in-out; margin: 0; }
+.titleBlock h4 { font-size: 25px; }
+.mobileCondition_block .topBlock h2 { font-size: 20px; font-weight: 600; margin-bottom: 10px; }
+
+.productCategory .form-control { min-width: 180px; min-height: 35px;}
+
+.unlockPage .nav-tabs .nav-link { font-size: 15px; }
+.unlockPage .boxDevice h2 { font-size: 15px; }
+.unlockPage .boxDesc { background: #F5F5F5; border-radius: 8px; padding: 10px; }
+#RefundStatus h4{ font-size: 14px; }
+.unlockPage .table tbody td { padding: 20px 8px; font-size: 12px; }
+
+.AccesoriesproductBox { width: 100% !important; height: 260px !important; }
+.AccesoriesproductBox img { height: 260px !important; }
+.dealsPage .productBox { margin-bottom: 50px; }
+
+.MYaccount_page h2{ font-size: 25px; }
+.MYaccount_page h3{ font-size: 15px; }
+
+.myacTop_block .invoice { font-size: 15px; }
+.MYaccount_page h2 { font-size: 15px; }
+.MYaccount_page .itemBox .btn_1{ font-size: 13px; font-weight: bold; border-radius: 4px; padding: 8px 5px; }
+.MYaccount_page .itemBox .btn_2{ font-size: 13px; font-weight: bold; border-radius: 4px; padding: 8px 5px; }
+.MYaccount_page .itemBox .btn_3{ font-size: 13px; font-weight: bold; border-radius: 4px; padding: 8px 5px; }
+
+.MYaccount_page .formAddress .form-control { font-size: 13px; }
+.boxSelectaddress h2{ font-size: 13px; }
+.boxSelectaddress p{ font-size: 12px; line-height: 25px; }
+
+
+
+
+
+
 }
 
 @media(max-width:991px) {
@@ -4833,6 +4927,41 @@ input[type=number] {
   .WhyChoose .m-view_brek{
     flex-wrap: wrap;
   }
+
+
+.accesoriesProducrCat li { margin-right: 50px; margin-bottom: 30px; margin-left: 30px; }
+.productBox h3 { white-space: nowrap; width: 90%; font-size: 15px; }
+.productBox h4 { font-size: 18px; }
+.productBox .det { font-size: 13px; }
+.productBox { margin-bottom: 40px; overflow: hidden; }
+
+.yourSelectProduct .lt-Side h2 { font-size: 20px;}
+.yourSelectProduct .lt-Side .netWorkSelect button span { border: 1px solid #ced4da; width: 40px;} 
+.yourSelectProduct .tab-content p { font-size: 12px; line-height: 20px; margin: 2px 0 !important; }
+.yourSelectProduct .Review { font-weight: bold; font-size: 15px; padding: 10px 25px; line-height: 20px;}
+.yourSelectProduct .AllReviews{ font-weight: bold; font-size: 15px; padding: 10px 25px; line-height: 20px;}
+.boxReivew h4{ font-size: 15px; }
+.boxReivew h4 span{ font-size: 13px; }
+.Modal_Addcart_details .cartCheckout{ font-weight: bold; font-size: 15px; padding: 10px 25px; line-height: 20px;}
+.Modal_Addcart_details .cartView{ font-weight: bold; font-size: 15px; padding: 10px 25px; line-height: 20px;}
+
+.select_Brand_Phone .box { margin-top: 50px;}
+
+.productCategory .form-control { min-width: 150px; }
+.productBox h4 { font-size: 14px; }
+
+.unlockPage .boxDevice .imgBlock{margin-right: 15px;}
+.unlockPage .boxDevice h2 { font-size: 13px; }
+
+.sellBanner .desc { width: 55%; left: 50px; }
+
+.table > :not(caption) > * > * { padding: 10px 0; background-color: var(--bs-table-bg); border-bottom-width: 1px; box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg); text-align: center; font-size: 14px; }
+.MYaccount_page .table td h2 { font-size: 12px; margin: 10px 0 20px !important; }
+.MYaccount_page .btn_3 { background: #fff; color: var(--primary); border: 1px solid var(--primary); min-width: 150px; font-size: 14px; font-weight: bold; border-radius: 4px; padding: 8px 5px; }
+.MYaccount_page .table td h2 span{ font-size: 10px; }
+
+
+
 }
 
 @media(max-width:801px) {
@@ -4884,6 +5013,73 @@ input[type=number] {
     margin-bottom: 20px;
   }
 
+
+
+
+.accesoriesProducrCat li { margin-right: 10px; margin-bottom: 25px; margin-left: 30px; }
+.titleBlock h4 { font-size: 25px;}
+.AccesoriesproductBox { width: 100% !important; height: 220px !important; }
+
+.productBox h4 { font-size: 15px; }
+
+.bigImgPro { display: flex; align-items: center; justify-content: center; width: 300px; height: 420px; overflow: hidden; margin: 0 0 30px; }
+.xzoom-thumbs .smallImgBottom { width: 60px; height: 70px; cursor: pointer;}
+.yourSelectProduct .lt-Side button { background: transparent; border: 1px solid #c5c5c5; font-size: 14px; border-radius: 4px; min-width: 30px;}
+.yourSelectProduct .lt-Side .netWorkSelect button { font-size: 9px; }
+.yourSelectProduct .boxAddcart img { width: 70%; float: right; margin: 0 -15px 0 0; }
+.FrequentlyBought h2 { font-size: 20px; }
+.yourSelectProduct .boxAddcart h2 { font-size: 25px; }
+
+.sellBanner h2 { font-size: 29px; font-weight: bold; line-height: 45px; margin-bottom: 10px; }
+.sellBanner span { display: block; font-size: 15px; font-weight: 400; line-height: 25px;}
+.brandMobile .box { border-radius: 20px; padding: 5px 10px; overflow: hidden; }
+.brandMobile .ImgBlock { width: 180px; height: 160px; overflow: hidden; margin-bottom: 10px; }
+.select_Brand_Phone .box button { background: transparent; border: 1px solid #c5c5c585; font-size: 10px; border-radius: 4px; padding: 5px;} 
+.select_Brand_Phone .box h2 { font-size: 14px; }
+.titleBlock h4 { font-size: 20px; }
+.addBorderLeft h5{ font-size: 15px; }
+.titleBlock button { background: transparent; font-size: 13px; }
+.titleBlock h3 { font-size: 20px;}
+.selectService .form-control { font-size: 13px; line-height: 15px; border: 1px solid #ced4da6b; padding: 5px;}
+.selectService label { font-size: 12px; margin-bottom: 8px; }
+.selectService .select2-container .select2-selection--single .select2-selection__rendered{ font-size: 13px; line-height: 15px; border: none; padding: 5px; width: 100%; outline: none; }
+.selectService .checkBox { font-size: 10px;} 
+
+.productCategory { background: #F5F5F5; padding: 10px;}
+
+.unlockPage .boxDevice{ padding: 0 10px; }
+#RefundStatus h4 { font-size: 12px; }
+.unlockPage .boxDesc h2{ font-size: 16px; }
+.unlockPage .boxDesc h3{   font-size: 25px; }
+.unlockPage .boxDesc .checkBox { font-size: 9px; }
+.unlockPage .ProceedTo { font-size: 11px; font-weight: bold; padding: 8px 5px; }
+.boxDesc p { font-size: 10px; }
+
+.dealsPage .offerSec .desc h2 { font-size: 35px; font-weight: 700; }
+.dealsPage .offerSec .desc h3 { font-size: 25px; font-weight: 700; }
+
+.repair-statusPage .table tbody td { padding: 5px; font-size: 10px; }
+.repair-statusPage .table thead td { padding-left: 10px; padding-right: 10px; font-size: 12px; }
+
+.trackMyOrder p{ font-size: 15px; line-height: 25px; text-align: justify; }
+.trackMyOrder h2{font-size: 15px; }
+
+.myacNav li span { margin-right: 12px; width: 20px; }
+.myacNav li span svg{ width: 15px; }
+.myacNav li a { font-size: 11px; color: var(--black-dark); transition: all 300ms ease-in-out; }
+
+.MYaccount_page h2 { font-size: 12px; }
+.MYaccount_page h3 { font-size: 10px; }
+.MYaccount_page h4{ font-size: 12px; }
+.proDetils button{ font-size: 11px; }
+.returnModal_details {  width: 750px; }
+
+.MYaccount_page .formAddress label{ font-size: 11px;  }
+
+
+
+
+
 }
 
 @media(max-width:767px) {
@@ -4926,6 +5122,58 @@ input[type=number] {
   .selectService .mobileBrekUi .addBorderLeft::before {
     display: none;
   }
+
+
+
+.accesoriesProducrCat li { margin-right: 5px; margin-bottom: 25px; margin-left: 20px; }
+.AccesoriesproductBox img { height: 210px !important; }
+
+.buyBanner {  margin-top: 5px; }
+.buyBanner .desc img { width: 30%; }
+.buyBanner .desc .txtBlock { margin-left: 10px; }
+.buyBanner .desc h2 { font-size: 20px; line-height: 35px;}
+.buyBanner .form-control { width: 250px; min-height: 32px; font-size: 14px; padding-left: 40px; border-color: var(--primary); border-width: 1px; }
+.buyBanner .desc p{ font-size: 14px; }
+.buyBanner .buyNow { font-size: 15px; padding: 8px 30px; }
+.buyPageProduct { padding: 0; }
+.productBox h5 { font-size: 25px; }
+
+.yourSelectProduct .lt-Side h2 { font-size: 18px; }
+.yourSelectProduct .boxAddcart h4 { font-size: 12px; }
+.yourSelectProduct a { font-size: 10px; }
+.yourSelectProduct .tab-content .reviewBtn { padding: 10px 30px; }
+
+.sellBanner h2 { font-size: 28px; font-weight: bold; line-height: 40px; margin-bottom: 10px; }
+.brandMobile .ImgBlock { width: 160px; height: 140px; overflow: hidden; margin-bottom: 10px; }
+.mobileCondition_block .tab-content .nav-tabs .nav-link h4 { font-size: 10px; font-weight: 400; padding-left: 10px;}
+.mobileCondition_block .tab-content .nav-tabs .nav-link { border: 1px solid #ced4da; border-radius: 12px; width: 100%; padding: 8px;}
+.mobileCondition_block li{ font-size: 13px; margin: 0 0 6px 0 !important; }
+.mobileCondition_block li span{  }
+.mobileCondition_block .tab-content h6.price_txt { font-size: 30px; font-weight: bold; margin-bottom: 10px; }
+.mobileCondition_block .tab-content .sellBtn { font-size: 15px; font-weight: bold; padding: 10px 20px; min-width: 200px; min-height: 48px; }
+
+.productBox h4 { font-size: 13px; }
+
+.sellBanner h2 { font-size: 25px; }
+.unlockPage .nav-tabs .nav-link { font-size: 12px; }
+.unlockPage .boxDevice .imgBlock img { height: 60px; width: 100%; object-fit: contain; }
+.unlockPage .boxDesc h2 { font-size: 10px; }
+.unlockPage .boxDesc h3 { font-size: 16px; }
+.unlockPage .boxDesc label::before { border: 1px solid #ced4da; padding: 8px; cursor: pointer; margin-right: 5px; border-radius: 3px; }
+.unlockPage .boxDesc .checkBox { font-size: 10px; }
+.unlockPage .ProceedTo { font-size: 8px; font-weight: bold; padding: 7px 3px; }
+.unlockPage .form-control { height: 30px; font-size: 10px; font-weight: 300; }
+.unlockPage .table tbody td { padding: 15px 5px; font-size: 10px; }
+#RefundStatus h4 { font-size: 10px; }
+
+.myacTop_block .invoice { font-size: 13px; }
+.MYaccount_page h2 { font-size: 10px; }
+
+.MYaccount_page .boxSelectaddress { border: 1px solid #ced4da; border-radius: 8px; padding: 10px; min-height: 225px; }
+.boxSelectaddress button{ font-size: 10px; }
+
+.MYaccount_page .formAddress .form-control { font-size: 10px; text-align: left; }
+
 
 
 
@@ -4977,6 +5225,101 @@ input[type=number] {
   .footer .fotterLinkSection ul li a{
     font-size: 14px;
   }
+
+
+.accesoriesProducrCat li { margin-right: 20px; margin-bottom: 25px; margin-left: 5px; }
+.titleBlock h4 { font-size: 20px; }
+.productCategory { padding: 10px 8px 0 10px; }
+.productCategory h2{ font-size: 15px; }
+.productCategory ul li a { font-size: 12px; margin-bottom: 10px;}
+
+.buyBanner .desc img { width: 25%; }
+.buyBanner .desc p { font-size: 12px; }
+
+.bigImgPro { width: 200px; height: 300px;}
+.xzoom-thumbs .smallImgBottom { width: 50px; height: 60px; cursor: pointer; }
+.yourSelectProduct .lt-Side h2 { font-size: 13px; }
+.yourSelectProduct .lt-Side label { font-size: 13px; margin-bottom: 8px; }
+.yourSelectProduct .lt-Side button { background: transparent; border: 1px solid #c5c5c5; font-size: 14px; border-radius: 4px; min-width: 30px; margin: 0 0 0 5px; }
+.yourSelectProduct .boxAddcart { border: 1px solid #c5c5c561; border-radius: 4px; padding: 10px; }
+.yourSelectProduct .boxAddcart h2 {  font-size: 20px; }
+.yourSelectProduct .boxAddcart h3 { font-size: 12px; margin-bottom: 20px; }
+.yourSelectProduct .cartBtn { font-weight: bold; font-size: 12px; }
+.yourSelectProduct .wiseListBtn { font-weight: bold; font-size: 11px; }
+.yourSelectProduct .boxAddcart img { width: 100%; float: left; margin: 0 -22px 0 0; }
+.yourSelectProduct .nav-tabs .nav-link { font-size: 12px; padding: 7px 10px; }
+.yourSelectProduct .tab-content .Warranty-h2 { font-size: 15px; }
+.yourSelectProduct .tab-content p { font-size: 10px; line-height: 15px; margin: 2px 0 !important; text-align: justify; }
+.yourSelectProduct .AllReviews { font-weight: bold; font-size: 12px;}
+.yourSelectProduct .Review { font-weight: bold; font-size: 12px;}
+.reviewModal .modal-title { font-size: 20px; font-weight: 600; }
+.Modal_Addcart_details { width: 550px; padding: 15px; overflow-y: scroll; }
+.Modal_Addcart_details .disProduct h3{ font-size: 14px; }
+.Modal_Addcart_details .disProduct h4{ font-size: 14px; }
+
+.sellBanner .desc { width: 60%; overflow: hidden; left: 25px; }
+.sellBanner h2 { font-size: 17px; font-weight: bold; line-height: 25px; margin-bottom: 10px; }
+.sellBanner span { display: block; font-size: 13px; font-weight: 400; line-height: 22px; }
+.sellBanner .form-control { width: 280px; min-height: 40px; font-size: 12px; padding-left: 40px; border-color: var(--primary); border-width: 1px; }
+.sellBanner .secBtn { border-radius: 4px; background: var(--primary); font-size: 13px; color: var(--white); font-weight: bold; padding: 8px 25px; margin-top: 10px; }
+.brandMobile .ImgBlock { width: 125px; height: 110px; overflow: hidden; margin-bottom: 10px; }
+.brandMobile .brandLogo { min-height: 25px; display: flex; align-items: center; justify-content: center; margin: 0 0 10px 0 !important; }
+.brandMobile .brandLogo svg{ width: 100%; height: 40px; }
+.brandMobile .box h3 { font-size: 12px; }
+.select_Brand_Phone .box .ImgDiv img { width: 100%; object-fit: contain; height: 170px; }
+.select_Brand_Phone .box .ImgDiv { width: 160px; height: 180px; }
+.select_Brand_Phone .box h2 { font-size: 11px; }
+.addBorderLeft h5 { font-size: 12px; }
+.titleBlock button { background: transparent; font-size: 10px; }
+.mobileCondition_block .tab-content p{ font-size: 14px; line-height: 30px; text-align: justify; }
+.selectService label { font-size: 12px; margin: 20px 0 4px 3px; }
+
+.productCategory .form-control {  min-width: 100px; }
+.productCategory ul li.active a { padding-left: 10px; font-weight: 600; }
+
+.unlockPage .boxDesc .checkBox { font-size: 8px; }
+
+.dealsPage .offerSec .desc h2 { font-size: 25px; font-weight: 700; }
+.dealsPage .offerSec .desc h3 { font-size: 15px; }
+
+.repair-statusPage { background: #F5F5F5; border-radius: 20px; padding: 15px; }
+.repair-statusPage h2{ font-size: 18px; margin: 0 0 10px !important; }
+.repair-statusPage h3{ font-size: 14px;}
+.repair-statusPage .table tbody td {padding: 20px 5px;font-size: 11px; }
+
+.trackMyOrder h2 { font-size: 13px; }
+.trackMyOrder h3 { font-size: 14px; }
+.trackMyOrder .invoice { font-size: 15px; }
+.trackMyOrder .progressBarItem.active h3 { font-weight: 600; font-size: 10px; }
+.trackMyOrder .progressBarItem.active h2 { font-weight: 600; font-size: 10px; }
+.trackMyOrder h2 {  font-size: 10px; }
+.trackMyOrder .progressBarItem span::before { top: 40%; right: -140px; }
+.trackMyOrder p { font-size: 12px; line-height: 21px; text-align: justify; }
+
+.myacNav { padding: 10px;}
+.myacNav li span { margin-right: 0px; width: 20px; }
+
+.MYaccount_page h4 { font-size: 10px; }
+.MYaccount_page h3 { font-size: 8px; }
+.myacTop_block .invoice { font-size: 11px; }
+.proDetils button span{  }
+.proDetils button span svg { width: 10px; }
+.proDetils button { font-size: 8px; }
+.MYaccount_page .itemBox { padding-left: 0px; }
+.returnModal_details { width: 560px; }
+.MYaccount_page .itemBox .proImg_Box { width: 80px; height: 125px; display: flex; align-items: center; justify-content: center; overflow: hidden; margin: 0 5px 0 0 !important; }
+
+.table > :not(caption) > * > * { font-size: 10px; }
+.MYaccount_page .table td h2 { font-size: 9px; margin: 10px 0 20px !important; }
+
+.MYaccount_page h2 span{ font-size: 8px; }
+.boxSelectaddress p { font-size: 10px; line-height: 20px; }
+.MYaccount_page .doneBtn { border-radius: 4px; background: var(--primary); font-size: 14px; color: var(--white); font-weight: bold; padding: 10px 33px; width: 130px; }
+
+
+
+
+
 }
 
 @media(max-width:575px) {
@@ -4991,6 +5334,72 @@ input[type=number] {
   .ourService h6 {
     font-size: 24px;
   }
+
+
+.accesoriesProducrCat li { margin-right: 10px; margin-bottom: 25px; margin-left: 9px; }
+.titleBlock h4 { font-size: 17px; }
+
+.yourSelectProduct .lt-Side { width: 80%; margin: 30px auto 30px; }
+.yourSelectProduct .lt-Side h2 { font-size: 20px; }
+.yourSelectProduct .lt-Side label { font-size: 20px; margin-bottom: 8px; }
+.yourSelectProduct .lt-Side button span { width: 30px; height: 30px;}
+.yourSelectProduct .lt-Side button { background: transparent; border: 1px solid #c5c5c5; font-size: 15px; border-radius: 4px; min-width: 50px; margin: 0 0 0 5px; }
+.yourSelectProduct .lt-Side .netWorkSelect button {  font-size: 12px; }
+.yourSelectProduct .boxAddcart h2 { font-size: 25px; }
+.yourSelectProduct .boxAddcart h3 { font-size: 15px; margin-bottom: 20px; }
+.yourSelectProduct .boxAddcart h4 { font-size: 17px; }
+.yourSelectProduct .cartBtn { font-weight: bold; font-size: 12px; width: 30%; }
+.yourSelectProduct .wiseListBtn { font-weight: bold; font-size: 11px; width: 30%; }
+.yourSelectProduct a { font-size: 15px; }
+.yourSelectProduct .boxAddcart img { width: 100%; float: right; margin: 0 0 0 0; }
+.yourSelectProduct .tab-content h3 { font-size: 20px; }
+.yourSelectProduct .tab-content p { font-size: 14px; line-height: 25px; }
+.yourSelectProduct .nav-tabs .nav-link { font-size: 15px; padding: 7px 15px; }
+.yourSelectProduct .tab-content h3 span { font-size: 15px; }
+.yourSelectProduct .tab-content h3 { font-size: 16px; line-height: 27px; }
+.yourSelectProduct .tab-content .reviewBtn { padding: 8px 15px; font-size: 14px; }
+.yourSelectProduct .boxAddcart { border: 1px solid #c5c5c561; border-radius: 4px; padding: 40px; }
+
+.brandMobile .brandLogo svg { width: 50%; height: 30px; }
+.brandMobile .box h3 { font-size: 14px; margin: 0 0 40px; }
+.select_Brand_Phone .box button { background: transparent; border: 1px solid #c5c5c585; font-size: 12px; border-radius: 4px; padding: 10px; }
+.select_Brand_Phone .box h2 { font-size: 15px; }
+
+.productCategory .form-control { min-width: 100px; font-size: 12px; font-weight: 300; padding-left: 32px; }
+
+.unlockPage .setIcon { border: 1px solid #ced4da; width: 35px; height: 35px;}
+.unlockPage .nav-tabs li span { margin-right: 0 !important; }
+.unlockPage .nav-tabs li span svg{ width: 20px; }
+.unlockPage .setIcon { border: 1px solid #ced4da; width: 25px; height: 30px; margin: 0 0 0 -5px; }
+.unlockPage .setIcon img{ width: 65%; }
+.unlockPage .table tbody td { padding: 10px 5px; font-size: 9px; }
+
+.dealsPage .offerSec .desc h2 { font-size: 15px; font-weight: 700; }
+.dealsPage .offerSec .desc h3 { font-size: 12px; margin: 6px 0 !important; }
+.dealsPage .offerSec .desc p { font-size: 10px; }
+.productBox h3 { white-space: nowrap; width: 100%; font-size: 13px; }
+
+.trackMyOrder h3 { font-size: 11px; }
+
+.myacNav li { margin-bottom: 15px; }
+
+.MYaccount_page .itemBox .btn_1 { font-size: 12px; font-weight: bold; border-radius: 4px; padding: 6px 5px; width: 100px; background: var(--primary); color: var(--white); min-width: 100px; }
+.MYaccount_page .itemBox .btn_2 { font-size: 12px; font-weight: bold; border-radius: 4px; padding: 6px 5px; width: 100px; background: var(--primary); color: var(--white); min-width: 100px; }
+.MYaccount_page .itemBox .btn_3 { font-size: 12px; font-weight: bold; border-radius: 4px; padding: 6px 5px; width: 100px; background: var(--primary); color: var(--white); min-width: 100px; }
+
+.table > :not(caption) > * > * { font-size: 10px; text-align: left; }
+.MYaccount_page .table td h2 span { font-size: 9px; }
+
+.boxSelectaddress p { font-size: 16px; line-height: 30px; }
+.MYaccount_page h2 { font-size: 19px; }
+.boxSelectaddress button { font-size: 15px; }
+.MYaccount_page h2 span { font-size: 10px; }
+.MYaccount_page .formAddress label { font-size: 14px; }
+
+
+
+
+
 }
 
 @media(max-width:480px) {
@@ -5006,12 +5415,247 @@ input[type=number] {
     justify-content: space-between;
   }
 
+
+
+
+.buyBanner .desc h2 { font-size: 16px; line-height: 30px; }
+.buyBanner .desc img { width: 20%; }
+.buyBanner .form-control { width: 220px; min-height: 20px; font-size: 11px; padding-left: 40px;}
+.buyBanner .desc p { font-size: 11px; margin: 10px 0 !important; }
+.buyBanner .buyNow { font-size: 10px; padding: 6px 25px; }
+
+.yourSelectProduct .tab-content p { font-size: 12px; line-height: 20px; }
+.Modal_Addcart_details { width: 430px; padding: 10px; overflow-y: scroll; }
+.Modal_Addcart_details .cardImg { width: 100px; height: 100px; display: flex; align-items: center; justify-content: center; overflow: hidden; margin: 0 !important; }
+.Modal_Addcart_details h2{ font-size: 15px; }
+.Modal_Addcart_details h3{ font-size: 14px; }
+.Modal_Addcart_details h4{ font-size: 14px; }
+.Modal_Addcart_details .cartView { font-weight: bold; font-size: 12px; padding: 10px 20px; line-height: 20px; }
+.Modal_Addcart_details .cartCheckout{ font-weight: bold; font-size: 12px; padding: 10px 20px; line-height: 20px; }
+
+.sellBanner h2 { font-size: 13px; font-weight: bold; line-height: 20px; margin-bottom: 10px; }
+.sellBanner span { display: block; font-size: 12px; font-weight: 400; line-height: 18px; }
+.sellBanner .form-control { width: 250px; min-height: 30px; font-size: 12px;}
+.titleBlock h4 { font-size: 14px; }
+.select_Brand_Phone .box button { font-size: 11px; border-radius: 4px; padding: 8px; }
+.mobileCondition_block .selectProduct { width: 80px; height: 150px; display: flex; align-items: center; justify-content: center; overflow: hidden; margin-right: 20px; }
+.mobileCondition_block .topBlock .selectStoreg { font-size: 14px; color: #fff; border-radius: 4px; padding-left: 4px; margin-bottom: 10px; }
+.sell_Contact_info {  padding: 50px 0; }
+.mobileCondition_block li { font-size: 11px; margin: 0 0 6px 0 !important; }
+.mobileCondition_block .tab-content h6.price_txt { font-size: 20px; font-weight: bold; margin-bottom: 10px; }
+.mobileCondition_block .tab-content .sellBtn { font-size: 13px; font-weight: bold; padding: 10px 20px; min-width: 150px; min-height: 38px; }
+
+.unlockPage h3{ font-size: 10px; }
+.unlockPage .boxDesc .checkBox { font-size: 6px; }
+.titleBlock h6{ font-size: 16px; }
+
+.repair-statusPage .rtBox p { border-bottom: 1px solid #858585; font-size: 12px; }
+.repair-statusPage .table tbody td { padding: 15px 4px; font-size: 10px; }
+
+.trackMyOrder .invoice { font-size: 12px; }
+.trackMyOrder .progressBarItem.active h2 { font-weight: 600; font-size: 8px; }
+.trackMyOrder .progressBarItem h3 {  font-size: 7px; }
+.trackMyOrder .progressBarItem.active h3 { font-weight: 600; font-size: 7px; }
+
+.returnModal_details { width: 430px; }
+
+
+
+
+
+
+
+
 }
 
-@media(max-width:420px) {}
+@media(max-width:420px) {
 
-@media(max-width:375px) {}
 
-@media(max-width:320px) {}
+.accesoriesProducrCat li { margin: 10px; }
+
+.productCategory {  padding: 25px; }
+.productBox { margin-bottom: 40px !important; overflow: hidden; }
+
+.yourSelectProduct .wiseListBtn { font-weight: bold; font-size: 13px; width: 50%; }
+.yourSelectProduct .cartBtn{ font-weight: bold; font-size: 13px; width: 50%; }
+.yourSelectProduct .nav-tabs .nav-link { font-size: 13px; padding: 7px 12px; }
+.Modal_Addcart_details { width: 370px; padding: 10px; overflow-y: scroll; }
+.Modal_Addcart_details .cartView { font-weight: bold; font-size: 10px; padding: 5px 10px; line-height: 15px; }
+.Modal_Addcart_details .cartCheckout { font-weight: bold; font-size: 10px; padding: 5px 10px; line-height: 15px; }
+
+.sellBanner .desc { left: 10px; }
+.sellBanner span { display: block; font-size: 11px; font-weight: 400; line-height: 10px; }
+.sellBanner .form-control { width: 230px; min-height: 30px; font-size: 11px; }
+.sellBanner .secBtn { border-radius: 4px; background: var(--primary); font-size: 12px; color: var(--white); font-weight: bold; padding: 5px 20px; margin-top: 8px; }
+.mobileCondition_block .nav-tabs .nav-link { margin: 0; border: inherit; border-radius: 0; padding: 0; }
+
+.productCategory { padding: 10px; }
+.productCategory .search_Icon { left: 8px;}
+.productCategory .form-control { min-width: 100px; font-size: 10px; font-weight: 300; padding-left: 25px; }
+
+.unlockPage .boxDesc { background: #F5F5F5; border-radius: 8px; padding: 5px; }
+.unlockPage .nav-tabs .nav-link { font-size: 9px; }
+.unlockPage .nav-tabs li span svg { width: 15px; }
+.titleBlock h6 { font-size: 12px; }
+.unlockPage .boxDevice h2 { font-size: 10px; margin: 0 !important; }
+.unlockPage .boxDevice h4 {font-size: 11px; margin: 5px 0 20px;}
+.table > :not(caption) > * > * { padding: .5rem .5rem; background-color: var(--bs-table-bg); border-bottom-width: 1px; box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg); font-size: 10px; }
+.sellBanner span {  display: block;  font-size: 11px;  font-weight: 400;  line-height: 15px; }
+.unlockPage .boxDesc .checkBox { font-size: 11px; }
+.unlockPage .boxDesc h2 { font-size: 15px; }
+.unlockPage .setIcon { border: 1px solid #ced4da; width: 40px; height: 30px; margin: 0; text-align: center; }
+
+.dealsPage .offerSec .desc { position: absolute; top: 50%; transform: translateY(-50%); left: 20px; }
+.dealsPage .offerSec .desc h2 { font-size: 14px; font-weight: 700; }
+.dealsPage .offerSec .desc h3 { font-size: 10px; margin: 5px 0 !important; }
+.dealsPage .offerSec .desc p { font-size: 8px; }
+
+.repair-statusPage h3 { font-size: 10px; }
+.repair-statusPage h2 { font-size: 14px; margin: 0 0 15px !important; }
+.repair-statusPage .table tbody .prog { background: none; border-radius: 4px; color: #267fdf; text-transform: uppercase; padding: 0; font-weight: bold; font-size: 11px; text-align: center; }
+.repair-statusPage .table tbody td { padding: 15px 4px; font-size: 10px; text-align: center; }
+.repair-statusPage .table thead { position: relative; font-size: 15px; font-weight: 600; text-align: center; }
+.repair-statusPage .table thead td { padding-left: 5px; padding-right: 5px; font-size: 10px; }
+
+.trackMyOrder .progressBarItem span::before { top: 50%; right: -110px; width: 120px; }
+.trackMyOrder h2 { font-size: 8px; }
+.trackMyOrder .invoice { font-size: 10px; }
+.trackMyOrder .progressBarItem { margin-right: 30px; }
+.trackMyOrder .progressBarItem span::before { top: 50%; right: -80px; width: 90px; }
+h2.raj-text { font-size: 11px !important; line-height: 20px; }
+
+.MYaccount_page h2 { font-size: 18px; }
+
+.MYaccount_page h2 { font-size: 10px; }
+.MYaccount_page .itemBox .btn_1 { font-size: 9px; font-weight: bold; border-radius: 4px; padding: 6px 5px; width: 70px; background: var(--primary); color: var(--white); min-width: 70px; }
+.MYaccount_page .itemBox .btn_2 { font-size: 9px; font-weight: bold; border-radius: 4px; padding: 6px 5px; width: 70px; background: var(--primary); color: var(--white); min-width: 70px; }
+.MYaccount_page .itemBox .btn_3 { font-size: 9px; font-weight: bold; border-radius: 4px; padding: 6px 5px; width: 70px; background: var(--primary); color: var(--white); min-width: 70px; }
+.returnModal_details { width: 410px; }
+.table > :not(caption) > * > * { padding: 10px 5px; background-color: var(--bs-table-bg); border-bottom-width: 1px; box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg); font-size: 10px; }
+
+/*.sellBanner img { height: 300px; width: 100%; object-fit: cover; }*/
+.accesoriesProducrCat li { margin: 5px; }
+
+
+}
+
+@media(max-width:375px) {
+
+.accesoriesProducrCat li a { font-size: 11px; }
+.titleBlock h4 { font-size: 14px; }
+.productCategory { padding: 30px; }
+.AccesoriesproductBox { width: 100% !important; height: 230px !important; }
+.buyBanner .form-control { width: 180px;}
+.buyBanner .desc h2 { font-size: 14px; line-height: 20px; }
+.buyBanner .desc p { font-size: 9px; margin: 10px 0 !important; }
+.yourSelectProduct .lt-Side { width: 90%;}
+.yourSelectProduct .boxAddcart { border: 1px solid #c5c5c561; border-radius: 4px; padding: 20px; }
+.reviewModal .stars { cursor: pointer; display: flex; width: 50%; }
+.reviewModal .star { margin-right: 0; }
+.FrequentlyBought .checkBox { font-size: 12px; margin-bottom: 0; }
+.relatedProducts h2 { font-size: 20px;}
+.yourSelectProduct .boxAddcart img { width: 70%; float: right; margin: 0 0 0 0; }
+.boxReivew h4 span { font-size: 10px; }
+.boxReivew h4 { font-size: 12px; font-weight: bold !important; }
+.yourSelectProduct .tab-content p { font-size: 10px; line-height: 15px; }
+.sellBanner h2 { font-size: 11px; font-weight: bold; line-height: 20px; margin-bottom: 10px; }
+.sellBanner span { display: block; font-size: 9px; font-weight: 400; line-height: 10px; }
+.sellBanner .form-control { width: 200px; min-height: 30px; font-size: 11px; }
+.sellBanner .secBtn { font-size: 10px; padding: 5px 20px; margin-top: 5px; }
+.titleBlock h4 {  font-size: 20px; }
+.mobileCondition_block .topBlock h2 { font-size: 16px; font-weight: 600; margin-bottom: 10px; }
+.mobileCondition_block .topBlock h3 { font-size: 15px; font-weight: 400; margin-bottom: 10px; }
+.mobileCondition_block .nav-tabs .nav-link .setIcon { border: 1px solid #ced4da; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 4px; margin-bottom: 5px; }
+.mobileCondition_block li { font-size: 10px; margin: 0 0 6px 0 !important;  }
+.addBorderLeft h5 {  font-size: 9px; margin: 0 !important;}
+.titleBlock button { background: transparent; font-size: 7px; }
+.titleBlock h4 {  font-size: 16px; }
+.productCategory { padding: 10px; }
+.productCategory .search_Icon { left: 8px;}
+.productCategory .form-control { min-width: 100px; font-size: 10px; font-weight: 300; padding-left: 25px; }
+.unlockPage .setIcon img { width: 50%; }
+.unlockPage .setIcon { border: 1px solid #ced4da; width: 25px; height: 30px; margin: 0 0 0 -12px; text-align: center; }
+.unlockPage h4{font-size: 10px;} 
+.table > :not(caption) > * > *{font-size: 8px;}
+.unlockPage .setIcon { border: 1px solid #ced4da; width: 40px; height: 30px; margin: 0; text-align: center; }
+.productCategory h2 { font-size: 12px; }
+.dealsPage .offerSec .desc h2 { font-size: 12px; font-weight: 700; }
+.dealsPage .offerSec .desc h3 { font-size: 9px; margin: 5px 0 !important; }
+.dealsPage .offerSec .desc p { font-size: 8px; }
+.repair-statusPage h2 { font-size: 15px; margin: 0 10px 15px 0 !important; }
+.trackMyOrder h3 { font-size: 10px; margin: 0 5px 0 0 !important; }
+.raj-text h2{ font-size: 11px; line-height: 20px; }
+.MYaccount_page h2 { font-size: 8px; }
+.proDetils button { font-size: 5px; }
+.proDetils button span svg { width: 6px; }
+.MYaccount_page h4 { font-size: 8px; }
+.returnModal_details { width: 315px; }
+.returnModal p{ text-align: justify; font-size: 10px; line-height: 20px; }
+.boxSelectaddress h2 { font-size: 15px; }
+.MYaccount_page .formAddress label { font-size: 11px; }
+
+
+
+
+
+}
+
+@media(max-width:320px) {
+
+
+.accesoriesProducrCat li { margin: 10px; }
+.accesoriesProducrCat li a { font-size: 9px; }
+
+.buyBanner .desc h2 { font-size: 13px; line-height: 20px; }
+.buyBanner .form-control { width: 170px; min-height: 20px; font-size: 11px; padding: 3px 0 4px 40px;}
+
+.yourSelectProduct .lt-Side h2 { font-size: 16px; }
+.yourSelectProduct .lt-Side label { font-size: 15px; margin-bottom: 8px; }
+.yourSelectProduct .nav-tabs .nav-link { font-size: 10px; padding: 7px 11px; }
+.FrequentlyBought h2 { font-size: 15px; }
+.FrequentlyBought .checkBox { font-size: 10px;}
+.Modal_Addcart_details { width: 300px; padding: 10px; overflow-y: scroll; }
+.Modal_Addcart_details h4 { font-size: 12px; }
+
+.sellBanner h2 { font-size: 9px; font-weight: bold; line-height: 10px; margin-bottom: 5px; }
+.sellBanner span { display: block; font-size: 8px; font-weight: 400; line-height: 10px; }
+.sellBanner .form-control { width: 180px; min-height: 20px; font-size: 10px; }
+.brandMobile .box h3 { font-size: 11px; margin: 0 0 40px; }
+.titleBlock h4 { font-size: 15px; }
+.titleBlock h3 { font-size: 12px; }
+.addBorderLeft { position: relative; padding: 0 0 0 5px !important; margin: 0 0 0 5px !important; }
+.addBorderLeft h5 { font-size: 7px; margin: 0 !important; }
+.selectService .checkBox { font-size: 9px; }
+.titleBlock img { width: 70%; }
+.titleBlock .ms-4{ margin: 0 !important; }
+.mobileCondition_block .nav-tabs .nav-link .setIcon { border: 1px solid #ced4da; width: 35px; height: 35px; display: flex; align-items: center; justify-content: center; border-radius: 4px; margin-bottom: 5px; padding: 0; }
+.mobileCondition_block .tab-content .nav-tabs .nav-link { border: 1px solid #ced4da; border-radius: 12px; width: 100%; padding: 0; }
+.mobileCondition_block .nav-tabs .nav-link h3 { font-size: 9px; font-weight: 400; color: var(--black-dark); }
+
+.productBox h4 { font-size: 11px; }
+.productBox h3 { white-space: nowrap; width: 100%; font-size: 13px; }
+
+.unlockPage .nav-tabs .nav-link { font-size: 7px; }
+.titleBlock .form-control { min-width: 130px; min-height: 42px; border-color: #c3c1c1; padding-left: 30px; border-radius: 4px; }
+.titleBlock .search_Icon { position: absolute; top: 50%; transform: translateY(-50%); left: 8px; display: block; line-height: 0; }
+.unlockPage .d-flex { margin: 0 !important;  }
+
+.dealsPage .offerSec .desc h2 { font-size: 10px; font-weight: 700; }
+.dealsPage .offerSec .desc h3 { font-size: 8px; margin: 4px 0 !important; }
+.dealsPage .offerSec .desc p { font-size: 7px; }
+
+.repair-statusPage .rtBox p { border-bottom: 1px solid #858585; font-size: 10px; width: 210px; }
+.repair-statusPage .table tbody td { padding: 10px 2px; font-size: 8px; text-align: center; }
+
+.trackMyOrder h2 { font-size: 6px; }
+.raj-text h2{ font-size: 11px; line-height: 20px; }
+.trackMyOrder .progressBarItem { margin-right: 20px; }
+
+.boxSelectaddress p { font-size: 14px; line-height: 25px; }
+
+
+
+
+}
 
 /*=============== Responsive End ==================*/
