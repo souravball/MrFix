@@ -23,7 +23,7 @@
 
 <body>
 
-	<!-- Header Start -->
+	<!-- Desktop-Header Start -->
 	<header class="header bg-black">
 		<div class="container">
 			<div class="d-flex align-items-center justify-content-between">
@@ -74,14 +74,140 @@
 		</div>
 	</header>
 
-	<div class="bg-primary">
-		<div class="container d-flex align-items-center justify-content-between font-size-15 text-white py-2">
+	<div class="bg-primary dsk-botm-hdr">
+		<div class="container d-flex align-items-center justify-content-between font-size-15 text-white py-2 flex-wrap">
 			<h3>Spring Sale | March 15th - March 31st. Shop Now</h3>
 			<h3>Spring Sale | March 15th - March 31st. Shop Now</h3>
 			<h3>Spring Sale | March 15th - March 31st. Shop Now</h3>
 		</div>
 	</div>
-	<!-- Header End -->
+	<!-- Desktop-Header End -->
+
+	<!-- Mobile-Header Start -->
+	<header class="mobi-hdr pt-2 bg-black">
+		<div class="container d-flex align-items-center justify-content-between">
+			<div class="logo-mobi">
+				<a href="index.html" class="d-block">
+					<img src="assets/images/logo.svg" alt="" srcset="">
+				</a>
+			</div>
+			<div class="flex-grow-1 mx-2 mx-md-4">
+				<input type="text" class="form-control" placeholder="Search Apple iPhone, Samsung Galaxy, Screens, Battery, Cable, Headphones, Car Mount, Cases...">
+			</div>
+
+			<button class="bg-transparent" id="menuHdrmobi">
+				<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="#dedede" class="bi bi-list"
+					viewBox="0 0 16 16">
+					<path fill-rule="evenodd"
+						d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+				</svg>
+			</button>
+
+			<button class="bg-transparent d-none p-0" id="closseMenuBar">
+				<svg xmlns="http://www.w3.org/2000/svg" width="26" height="24" fill="#fe5104" class="bi bi-x-lg"
+					viewBox="0 0 16 16">
+					<path
+						d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+				</svg>
+			</button>
+		</div>
+		<div class="bg-primary mt-2 py-2">
+			<div class="container d-flex align-items-center justify-content-center">
+				<h3 class="font-size-12 txt-white fw-normal">Spring Sale | March 15th - March 31st. Shop Now</h3>
+			</div>
+		</div>
+	</header>
+
+	<div class="menuSideBar">
+		<div class="d-flex align-items-center justify-content-between mb-4">
+			<h2 class="font-size-12 txt-white d-flex align-items-center">
+				<span class="me-1">
+					<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#fe5104" class="bi bi-geo-alt"
+						viewBox="0 0 16 16">
+						<path
+							d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+						<path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+					</svg>
+				</span>
+				Home street, Edinburgh
+			</h2>
+			<a href="your_order.html"
+				class="font-size-12 txt-white d-flex align-items-center bg-transparent mx-3 line-height-0">
+				<span class="me-1">
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+						class="bi bi-person" viewBox="0 0 16 16">
+						<path
+							d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+					</svg>
+				</span>
+				My Account
+			</a>
+
+			<div>
+				<a href="cart.html" class="mobiCart d-block">
+					<span class="link-light-0 d-block">
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff" class="bi bi-bag"
+							viewBox="0 0 16 16">
+							<path
+								d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+						</svg>
+					</span>
+					<span class="cartItem">
+						10
+					</span>
+				</a>
+			</div>
+		</div>
+		<nav class="mobi_navigation">
+			<ul class="d-flex flex-column ms-3">
+				<li><a href="index.html" class="">Repairs</a></li>
+				<li><a href="accesories.html" class="">Accesories</a></li>
+				<li><a href="buy.html" class="">Buy</a></li>
+				<li><a href="sell.html" class="">Sell</a></li>
+				<li><a href="spare-parts.html" class="">Spare Parts</a></li>
+				<li><a href="unlock.html" class="">Unlock</a></li>
+				<li><a href="deals.html" class="">Deals</a></li>
+				<li><a href="repair-status.html" class="">Repair Status</a></li>
+				<li><a href="track-my-order.html" class="">Track my Order</a></li>
+				<li><a href="my_wishlist.html" class="">My Wishlist</a></li>
+			</ul>
+		</nav>
+	</div>
+	<!-- Mobile-Header End -->
+
+	<!-- Login Before Header Start -->
+	<header class="before-login-header d-none">
+		<div class="text-center bg-primary text-white py-2">
+			<p>Spring Sale | March 15th - March 31st. Shop Now</p>
+		</div>
+		<div class="bg-black py-3">
+			<div class="container d-flex justify-content-between align-items-center">
+				<div>
+					<a href="index.html"><img src="assets/images/logo.svg" alt="Logo"></a>
+				</div>
+				<ul class="d-flex">
+					<li><a href="#">Repairs</a></li>
+					<li><a href="#">Spare Parts</a></li>
+					<li><a href="#">Unlock</a></li>
+					<li><a href="#">Deals</a></li>
+					<li><a href="#">Accesories</a></li>
+					<li><a href="#">Buy</a></li>
+					<li><a href="#">Sell</a></li>
+				</ul>
+				<div>
+					<button class="bg-transparent"><img src="assets/images/search.svg"></button>
+					<button class="bg-transparent mx-4" data-bs-toggle="modal" data-bs-target="#exampleModalToggle"
+						role="button">
+						<img src="assets/images/account_icon.svg">
+					</button>
+					<button class="bg-transparent"><img src="assets/images/cart_icon.svg"></button>
+
+				</div>
+			</div>
+		</div>
+
+	</header>
+	<!-- Login Before Header End -->
 
     <!-- Banner Start -->
     <section class="sellBanner">
@@ -730,12 +856,12 @@
 					<h2>Our Stores</h2>
 					<ul>
 						<li><a href="#">Edinburgh Home Street</a></li>
-						<li><a href="#"></a>Edinburgh Corstorphine</a></li>
-						<li><a href="#"></a>Milton Keynes</a></li>
-						<li><a href="#"></a>Kilmornock</a></li>
-						<li><a href="#"></a>Glasgow</a></li>
-						<li><a href="#"></a>Arbroth</a></li>
-						<li><a href="#"></a>Bolton</a></li>
+						<li><a href="#">Edinburgh Corstorphine</a></li>
+						<li><a href="#">Milton Keynes</a></li>
+						<li><a href="#">Kilmornock</a></li>
+						<li><a href="#">Glasgow</a></li>
+						<li><a href="#">Arbroth</a></li>
+						<li><a href="#">Bolton</a></li>
 					</ul>
 				</div>
 				<div>
@@ -755,8 +881,8 @@
 				</div>
 			</div>
 
-			<div class="bottom_Block d-flex align-items-center justify-content-between pb-3">
-				<ul class="d-flex align-items-center flex-wrap">
+			<div class="bottom_Block d-flex align-items-center justify-content-between pb-3 flex-wrap">
+				<ul class="d-flex align-items-center">
 					<li>
 						<a href="#"><img src="assets/images/Security_footer.svg" alt=""></a>
 					</li>
@@ -824,6 +950,20 @@
 	<!-- Js End -->
 
 	<script>
+		$("#menuHdrmobi").click(function () {
+			$(".menuSideBar").css("right", "0%");
+			$(this).hide();
+			$('#closseMenuBar').removeClass('d-none');
+			$('#closseMenuBar').addClass('d-block');
+			$('html').css("overflow", "hidden");
+		});
+		$("#closseMenuBar").click(function () {
+			$(".menuSideBar").css("right", "-100%");
+			$('#menuHdrmobi').show();
+			$(this).addClass('d-none');
+			$('html').css("overflow", "initial");
+		});
+
 		jQuery(function ($) {
 			var path = window.location.href;
 			$('ul a').each(function () {
