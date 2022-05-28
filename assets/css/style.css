@@ -5727,7 +5727,7 @@ input[type=number] {
     font-size: 13px;
   }
 
-  .MYaccount_page th{
+  .MYaccount_page th {
     font-size: 12px;
   }
 
@@ -6390,7 +6390,6 @@ input[type=number] {
   }
 
   .trackMyOrder .progressBarItem span::before {
-    top: 40%;
     right: -140px;
   }
 
@@ -6535,7 +6534,9 @@ input[type=number] {
     width: 100%;
     height: 220px;
   }
-  .MYaccount_page th, td{
+
+  .MYaccount_page th,
+  td {
     min-width: 100px;
   }
 }
@@ -6847,7 +6848,7 @@ input[type=number] {
     margin-top: 10px;
   }
 
-  .MYaccount_page .boxSelectaddress{
+  .MYaccount_page .boxSelectaddress {
     margin-bottom: 20px;
   }
 
@@ -6855,6 +6856,15 @@ input[type=number] {
 }
 
 @media(max-width:480px) {
+  .trackMyOrder .progressBarItem {
+    margin-right: 30px;
+  }
+
+  .trackMyOrder .progressBarItem span::before {
+    right: -73px;
+    width: 70px;
+  }
+
   .brand .box {
     width: 50%;
   }
@@ -7099,7 +7109,7 @@ input[type=number] {
 
 @media(max-width:420px) {
 
-  .m-versionMenu{
+  .m-versionMenu {
     width: 100%;
   }
 
