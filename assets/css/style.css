@@ -5734,6 +5734,9 @@ input[type=number] {
 }
 
 @media(max-width:767px) {
+  .we-promise button{
+    margin: 30px 0;
+  }
   .repair .box {
     width: 100%;
   }
@@ -7103,7 +7106,9 @@ input[type=number] {
   .current-openings h2 {
     font-size: 16px;
   }
-
+  .productCategory h2 {
+    font-size: 12px;
+  }
 
 }
 
