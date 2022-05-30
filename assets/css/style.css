@@ -4180,12 +4180,12 @@ input[type=number] {
   padding: 9px 20px;
   width: 100%;
   justify-content: center;
-  margin-top: 30px;
+  margin: 0 !important;
 }
 
 .loginModal .fbbg {
   background: #1877F2;
-  margin-top: 60px;
+  margin-top: 60px !important;
 }
 
 .loginModal .adLeft_border {
@@ -6442,7 +6442,7 @@ input[type=number] {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    margin: 0 5px 0 0 !important;
+    margin: 0 13px 0 0 !important;
   }
 
 
@@ -6542,6 +6542,22 @@ input[type=number] {
   td {
     min-width: 100px;
   }
+
+  .modal-body .flex-grow-1 .d-flex h2{ 
+    font-size: 15px;
+
+  }
+  .loginModal .btnLogin {
+    display: inline-block;
+    border-radius: 4px;
+    background: var(--primary);
+    font-size: 14px;
+    color: var(--white);
+    font-weight: bold;
+    padding: 10px 30px;
+  }
+.r-new{ margin-top: 1.5rem !important;}
+
 }
 
 @media(max-width:575px) {
@@ -6779,7 +6795,7 @@ input[type=number] {
   }
 
   .MYaccount_page .itemBox .btn_3 {
-    font-size: 12px;
+    font-size: 11px;
     font-weight: bold;
     border-radius: 4px;
     padding: 6px 5px;
@@ -6855,14 +6871,95 @@ input[type=number] {
     margin-bottom: 20px;
   }
 
+  .MYaccount_page .formAddress .form-control {
+    font-size: 14px;
+    text-align: left;
+  }
 
+  .MYaccount_page .formAddress label {
+    font-size: 14px;
+  }
+
+  .myacNav li a {
+    font-size: 13px;
+    color: var(--black-dark);
+    transition: all 300ms ease-in-out;
+  }
+
+  .mobileCondition_block .tab-content .nav-tabs {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .mobileCondition_block .tab-content .nav-tabs .nav-link h4 {
+    font-size: 15px;
+    font-weight: 400;
+    padding-left: 10px;
+  }
+
+  .unlockPage .nav-tabs .nav-link {
+    font-size: 15px;
+  }
+
+  .unlockPage .nav-tabs li span {
+    margin-right: 15px !important;
+    margin-bottom: 10px;
+  }
+  .unlockPage .table tbody td {
+    padding: 10px 5px;
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .modal-body .flex-grow-1 .d-flex h2{ 
+    font-size: 15px;
+
+  }
+  .loginModal .btnLogin {
+    display: inline-block;
+    border-radius: 4px;
+    background: var(--primary);
+    font-size: 15px;
+    color: var(--white);
+    font-weight: bold;
+    padding: 10px 30px;
+  }
+
+  .loginModal .btnLogin {
+    display: inline-block;
+    border-radius: 4px;
+    background: var(--primary);
+    font-size: 13px;}
+
+    .loginModal .fbbg {
+      background: #1877F2;
+      margin-top: 60px;
+      font-size: 15px;
+    }
+    .loginModal .login-google-btn {
+      font-size: 13px;margin: 30px 0 0 0 !important;}
+
+      .loginModal .footerBtn::before {
+        display:none;
+        }
+        .loginModal .footerBtn::after {
+        display:none;
+        }
+        .loginModal .footerBtn {
+          position: relative;
+          margin-top: 0;
+          padding-top: 0;
+        }
 }
 
 @media(max-width:480px) {
   .trackMyOrder .progressBarItem {
     margin-right: 30px;
   }
-
+  .forgotPasswordModal .modal-dialog-centered {
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+  }
   .trackMyOrder .progressBarItem span::before {
     right: -73px;
     width: 70px;
@@ -6880,8 +6977,17 @@ input[type=number] {
     justify-content: space-between;
   }
 
-
-
+  .loginModal .footerBtn {
+    position: relative;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .loginModal .footerBtn::before {
+  display:none;
+  }
+  .loginModal .footerBtn::after {
+  display:none;
+  }
 
   .buyBanner .desc h2 {
     font-size: 16px;
@@ -7110,7 +7216,75 @@ input[type=number] {
     font-size: 12px;
   }
 
+  .proDetils button {
+    font-size: 12px;
+  }
+
+  .MYaccount_page h4 {
+    font-size: 15px;
+  }
+  .MYaccount_page h3 {
+    font-size: 13px;
+  }
+  .MYaccount_page h2 {
+    font-size: 13px;
+  }
+
+  .select_Brand_Phone .box button {
+    font-size: 11px;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin: 4px;
+  }
+  .mobileCondition_block li {
+    font-size: 12px;
+    margin: 0 0 6px 0 !important;
+  }
+
+  #RefundStatus h4 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .myacNav li a {
+    font-size: 14px;
+    color: var(--black-dark);
+    transition: all 300ms ease-in-out;
+  }
+  .myacNav li span svg {
+    width: 20px;
+  }
+  
+  .myacNav li span {
+    margin-right: 0px;
+    width: 30px;
+  }
+
+  .cart_Block .table tbody td h2 {
+    font-size: 14px;
+  }
+
+  .cart_Block .table tbody td h3 {
+    font-size: 11px;
+  }
+
+  .loginModal .adLeft_border::after { display: none;}
+  .loginModal .adLeft_border::before {display: none;}
+  .loginModal .adLeft_border {
+    position: relative;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .loginModal .fbbg {
+    background: #1877F2;
+    margin-top: 15px;}
+
+    .raj-aadd {flex-wrap:wrap; }
 }
+
+
+
 
 @media(max-width:420px) {
 
@@ -7118,6 +7292,7 @@ input[type=number] {
     width: 100%;
   }
 
+  .raj-all{ font-size: 13px;}
 
   .accesoriesProducrCat li {
     margin: 10px;
@@ -7454,10 +7629,63 @@ input[type=number] {
     height: 220px;
   }
 
+  .MYaccount_page .itemBox .btn_3{
+    width:85px;
+  }
 
+  .MYaccount_page .itemBox .btn_2{
+    width:85px;
+  }
 
+  .MYaccount_page .itemBox .btn_1{
+    width:85px;
+  }
+.myacTop_block{
+  padding: 5px;
+}
+.myacTop_block h2{
+  font-size: 10px;
 }
 
+.unlockPage .nav-tabs .nav-link {
+  font-size: 15px;
+}
+.unlockPage .nav-tabs li span svg {
+  width: 25px;
+}
+.unlockPage .boxDesc {
+  background: #F5F5F5;
+  border-radius: 8px;
+  padding: 10px 10px 30px 10px;
+}
+
+.repair-statusPage h3 {
+  font-size: 13px;
+}
+.myacTop_block h2 {
+  font-size: 8px;
+}
+.loginModal .btnLogin {
+  display: inline-block;
+  border-radius: 4px;
+  background: var(--primary);
+  font-size: 14px;
+  padding: 12px 25px;
+}
+.modal-header h5{
+  font-size: 25px;
+}
+}
+
+
+@media(max-width:415px) {
+
+.raj-all-t{  
+   font-size: 12px;}
+.raj-all {
+  font-size: 12px;
+}
+}
 @media(max-width:375px) {
 
   .accesoriesProducrCat li a {
@@ -7737,6 +7965,18 @@ input[type=number] {
     font-size: 13px;
   }
 
+  .proDetils button {
+    font-size: 12px;
+    margin: 0 10px 0 0;
+  }
+
+  .MYaccount_page h4 {
+    font-size: 13px;
+  }
+
+  .MYaccount_page .formAddress label {
+    font-size: 13px;
+  }
 
 }
 
